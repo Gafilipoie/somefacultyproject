@@ -1,3 +1,104 @@
-.mainbody{
-	background-image:url("images/lightgrey.png");
+title {
+  display: none;
 }
+
+body {
+  margin: 0 auto;
+  font: 12px/22px Helvetica, Arial, sans-serif;
+  background-color: #131313;
+  color: #544E47;
+}
+
+header {
+  height: 90px;
+  line-height: 125px;
+  overflow: hidden;
+  background-image: url('images/gradient.jpg');
+  background-repeat: repeat-x;
+  background-position: top left;
+  position: relative;
+}
+
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+  position: relative;
+}
+
+#logo {
+ float: left;
+ height: 89px;
+ width: 68px;
+ overflow: hidden;
+ position: relative;
+ margin: 0;
+}
+
+#logo img{
+  margin-right: 20px;
+}
+
+header h1#title{
+  font-size: 25px;
+  display: inline-block;
+  padding-bottom: 0;
+  float: left;
+  color: #6E98AE;
+  text-shadow: #000000 0 1px 0;
+  margin: 0;
+}
+
+header h2#slogan {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  position: relative;
+  top: -7px;
+  margin: 0;
+}
+h2#slogan {
+  display: inline-block;
+  padding-bottom: 0;
+  float: left;
+  color: #58534A;
+  text-shadow: #000000 0 1px 0;
+}
+
+nav {
+  background-color: #212121;
+  background-image: url('images/gradient.jpg');
+  height: 30px;
+  position: relative;
+  display: block;
+}
+nav .wrapper>ul {
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+}
+nav .wrapper>ul>li{
+  padding: 0 0 10px 0;
+  display: inline-block;
+  position: relative;
+}
+nav ul{
+  list-style:none;
+}
+
+ul, ol{
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+nav li a#current, nav li a#current:hover, nav li a.currentAncestor, nav li a.currentAncestor:hover{
+  color: #A8A195;
+}
+

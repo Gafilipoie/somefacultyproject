@@ -1,0 +1,66 @@
+nav {
+  background-color: #212121;
+  background-image: url("images/gradient.jpg");
+  height: 30px;
+  position: relative;
+  display: block; }
+
+nav .wrapper > ul {
+  height: 30px;
+  line-height: 30px;
+  position: absolute; 
+  list-style: none;
+}
+
+nav .wrapper > ul > li {
+  padding: 0 0 10px 0;
+  display: inline-block;
+  position: relative; }
+
+
+ul, ol {
+  margin: 0 0 18px 0;
+  padding: 0; }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent; }
+
+nav li a {
+  text-decoration: inherit;
+  color: #756E62;
+  text-shadow: 0 1px 0 #000000;
+}
+
+nav li a:hover {
+	color: #A8A195; 
+}
+nav li a:active {
+	color: #A8B195; 
+}
+
+
+nav .wrapper>ul>li:first-child>a{
+	padding: 0 15px 0 0;
+	background: none;
+}
+
+nav .wrapper>ul>li>a {
+	padding: 0 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+	font-size: 11px;
+	background: url('resources/imagini/nav_divider.png') no-repeat 0 0;
+}
+
+
+a{
+	text-decoration: none;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+a:-webkit-any-link {
+	cursor: auto;
+}
