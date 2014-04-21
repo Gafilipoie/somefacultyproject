@@ -1,5 +1,0 @@
-From Command Prompt -> cd to where your file is (ex: cd Documents/GitHub/TWProiectNELO/resources/sass) ->
--> by inputing the comand line sass -h, it will bring to the console all the options you have for sass ->
--> by inputin the sass --watch style.scss:style.css you will work in the style.scss wich is a sass file
-and every change you make to that file it will automaticly convert it to the css file
--> by inputing the sass --style, you have the option of how your .css file will look like (defoult, compressed etc)
