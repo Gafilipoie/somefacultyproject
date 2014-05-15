@@ -1,0 +1,46 @@
+.heading {
+  max-width: 1130px;
+  position: relative;
+  margin: 0 auto 38px;
+  padding: 38px 0 20px;
+  font-family: Muli;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading .red {
+  left: 0;
+  background: #df6c4f;
+}
+
+.heading .yellow {
+  left: 25%;
+  background: #e6be34;
+}
+
+.heading .green {
+  left: 50%;
+  background: #409f89;
+}
+
+
+.heading .blue {
+  left: 75%;
+  background: #1a99aa;
+}
+
+.heading .red, .heading .yellow, .heading .green, .heading .blue{
+  width: 25%;
+  height: 3px;
+  display: block;
+  bottom: 0;
+  position: absolute;
+}
+
+.hotel-block {
+  margin-bottom: 40px;
+  width: 33.33333333%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
