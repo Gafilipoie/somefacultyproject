@@ -39,6 +39,71 @@
 }
 
 .hotel-block {
+  float: left;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  width: 32.5%;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#block-body {
+  height: 236px;
+  min-height: 236px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: #f9f8f4;
+  cursor: pointer;
+}
+
+.block-picture {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 2px;
+  height: 246px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+.block-footer {
+  padding-top: 3px;
+  background: #f9f8f4;
+}
+
+.hotel-detail {
+  float: left;
+  max-width: 240px;
+}
+
+.hotel-name {
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.hotel-location {
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.rezervation {
+  float: right;
+  width: 104px;
+  margin-top: 13px;
   margin-bottom: 40px;
   width: 33.33333333%;
   padding-right: 5px;
