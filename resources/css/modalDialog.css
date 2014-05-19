@@ -1,4 +1,4 @@
-.modalDialog {
+.modalDetails {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
@@ -13,7 +13,37 @@
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
-.modalDialog2 {
+.modalReservation {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99998;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalLogin {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99998;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalSignup {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
@@ -29,16 +59,24 @@
 	pointer-events: none;
 }
 
-.modalDialog:target {
+.modalDetails:target {
 	opacity:1;
 	pointer-events: auto;
 }
-.modalDialog2:target {
+.modalReservation:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalLogin:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalSignup:target {
 	opacity:1;
 	pointer-events: auto;
 }
 
-.modalDialog > div {
+.modalDetails > div {
 	width: 800px;
 	min-height: 400px;
 	position: relative;
@@ -46,11 +84,14 @@
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: -webkit-linear-gradient(#fff, #ccc);
+	background: -o-linear-gradient(#fff, #ccc);
+	-webkit-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
-.modalDialog2 > div {
+.modalReservation > div {
 	width: 500px;
 	min-height: 500px;
 	position: relative;
@@ -58,9 +99,9 @@
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: -webkit-linear-gradient(#fff, #ccc);
+	background: -o-linear-gradient(#fff, #ccc);
 	font-family: 'Bree Serif';
     font-weight: bold;
     white-space: normal;
@@ -68,9 +109,97 @@
     text-align: center;
     font-size: 17px;
     line-height: 32px;
+    -webkit-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.modalLogin > div {
+	width: 395px;
+	min-height: 240px;
+	position: relative;
+	margin: 6% auto;
+	padding: 5px 10px 13px 10px;
+	border-radius: 3px;
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: -webkit-linear-gradient(#fff, #ccc);
+	background: -o-linear-gradient(#fff, #ccc);
+    -webkit-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);   
+}
+.modalSignup > div {
+	width: 500px;
+	min-height: 300px;
+	position: relative;
+	margin: 6% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: -webkit-linear-gradient(#fff, #ccc);
+	background: -o-linear-gradient(#fff, #ccc);
+    -webkit-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.close {
+.modalLogin > div > .loginTitle {
+	width: 375px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	color: #373737;
+	font-family: 'Bree Serif';
+    font-weight: bold;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 25px;
+    line-height: 32px;
+	text-align: left;
+}
+.modalLogin > div > .loginForm {
+	width: 375px;
+	min-height: 100px;
+	max-height: 100px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	color: #373737;
+	font-family: 'Bree Serif';
+    font-weight: bold;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 32px;
+	text-align: left;
+}
+.modalLogin > div > .loginForgot {
+	width: 375px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	color: #373737;
+	font-family: 'Bree Serif';
+    font-weight: bold;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 32px;
+	text-align: left;
+}
+.modalLogin > div > hr {
+	width: 92.5%;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin-left: 8px;
+	margin-right: 1px;
+	padding: 0;
+	box-shadow: 2px 1px 1px #888888;
+}
+
+.closeDetails {
 	background: #606061;
 	color: #FFFFFF;
 	line-height: 25px;
@@ -88,7 +217,43 @@
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
 }
-.close2 {
+.closeReservation {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.closeLogin {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.closeSignup {
 	background: #606061;
 	color: #FFFFFF;
 	line-height: 25px;
@@ -107,8 +272,10 @@
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
-.close2:hover { background: #00d9ff; }
+.closeDetails:hover { background: #00d9ff; }
+.closeReservation:hover { background: #00d9ff; }
+.closeLogin:hover { background: #00d9ff; }
+.closeSignup:hover { background: #00d9ff; }
 
 .gallery {
 	float: left;

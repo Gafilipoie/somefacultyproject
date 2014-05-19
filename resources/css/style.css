@@ -11,7 +11,7 @@ ul {
 }
 
 header {
-  z-index: 1;
+   z-index: 1;
    display: block;
    width: 100%;
    height: 82px;
@@ -58,8 +58,7 @@ nav.user-nav div.panel-left div.user-logo-state, a{
   color: rgba(255,255,255,.8);
 }
 
-a.register{
-  margin-right: 3px;
+a.login{
   margin-left: 10px;
 }
 
