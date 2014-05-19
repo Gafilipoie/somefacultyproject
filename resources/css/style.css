@@ -41,6 +41,9 @@ header .menu-nav{
 }
 
 .container {
+  width: 76%;
+  margin: 0 auto;
+  padding-right: 1px;
   width: 75%;
   margin: 0 auto;
   padding-right: 10px;
@@ -187,44 +190,10 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #main {
-   width: 75%;
-   min-height: 800px;
-   margin: 0px;
-   margin-left:12%;
+   width: 76%;
+   min-height: 1000px;
+   margin-left: 11%;
    padding: 0px;
    display: -webkit-flex;
    display:         flex;
@@ -232,11 +201,13 @@ footer {
            flex-flow: row;
    }
 
-  #main > article {
-   width: 75%;
+
+
+#main > article {
+   width: 76%;
+   padding: 10px;
    margin: 4px;
    margin-top: -30px;
-   padding: 5px;
    background: #f9f8f4;
    border: 1px solid;
    border-radius: 0px;
