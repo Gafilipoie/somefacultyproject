@@ -1,4 +1,51 @@
-.heading {
+@media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+            flex-direction: column;
+   }
+
+   #main > article, #main > aside {
+    
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+}
+
+#main {
+  width: 76%;
+  min-height: 1000px;
+  margin-left: 11.7%;
+  padding: 0px;
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+}
+
+#main > article {
+  width: 76%;
+  padding: 10px;
+  margin: 4px;
+  margin-top: -30px;
+  background: #f9f8f4;
+  border: 1px solid;
+  border-radius: 0px;
+  border-color: #DADADA;
+  box-shadow: 2px 2px 5px #888888; 
+  -webkit-flex: 3 1 60%;
+          flex: 3 1 60%;
+  -webkit-order: 2;
+          order: 2;
+}
+
+
+
+#main > article > div.heading {
   max-width: 1130px;
   position: relative;
   margin: 0 auto 38px;
@@ -9,23 +56,23 @@
   text-transform: uppercase;
 }
 
-.heading .red {
+#main > article > div.heading > span.red {
   left: 0;
   background: #df6c4f;
 }
 
-.heading .yellow {
+#main > article > div.heading > span.yellow {
   left: 25%;
   background: #e6be34;
 }
 
-.heading .green {
+#main > article > div.heading > span.green {
   left: 50%;
   background: #409f89;
 }
 
 
-.heading .blue {
+#main > article > div.heading > span.blue {
   left: 75%;
   background: #1a99aa;
 }
@@ -38,7 +85,7 @@
   position: absolute;
 }
 
-.hotel-block {
+#main > article > div.hotel-block {
   float: left;
   margin-right: 0px;
   margin-bottom: 40px;
@@ -47,7 +94,7 @@
   padding-left: 4px;
 }
 
-#block-body {
+#main > article > div.hotel-block > #block-body {
   height: 236px;
   min-height: 236px;
   display: block;
@@ -66,17 +113,17 @@
   -webkit-transform-style: preserve-3d;
 }
 
-.block-footer {
+#main > article > div.hotel-block > div.block-footer {
   padding-top: 3px;
   background: #f9f8f4;
 }
 
-.hotel-detail {
+#main > article > div.hotel-block > div.block-footer > div.hotel-detail {
   float: left;
   max-width: 240px;
 }
 
-.hotel-name {
+#main > article > div.hotel-block > div.block-footer > div.hotel-detail > span.hotel-name {
   display: block;
   color: #373737;
   font-family: 'Bree Serif';
@@ -88,7 +135,7 @@
   line-height: 32px;
 }
 
-.hotel-location {
+#main > article > div.hotel-block > div.block-footer > div.hotel-detail > span.hotel-location {
   display: block;
   color: #373737;
   font-family: 'Bree Serif';
@@ -100,7 +147,7 @@
   line-height: 12px;
 }
 
-.rezervation {
+#main > article > div.hotel-block > div.block-footer > div.rezervation {
   float: right;
   width: 104px;
   margin-top: 13px;
@@ -109,3 +156,106 @@
   padding-right: 5px;
   padding-left: 5px;
 }
+
+  
+#main > article > .hotel-content {
+  float: left;
+  width: 74.5%;
+  min-height: 157px;
+  margin: 1px;
+  padding: 10px;
+  background: #f9f8f4;
+  border: 1px solid #e7e4da;
+  border-radius: 3px;
+  border-color: #DADADA;
+  box-shadow: 2px 2px 5px #888888; 
+}
+
+
+
+#main > article > aside {
+   width: 22%;
+   padding-right: 10px;
+   float: left;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+   }
+ 
+#main > article > aside > div.categories-box {
+  min-height: 157px;
+  margin: 1px;
+  background: #fff;
+  border: 1px solid #e7e4da;
+  border-radius: 3px;
+  border-color: #DADADA;
+  box-shadow: 2px 2px 5px #888888; 
+  font-family: 'Muli';
+}  
+
+#main > article > aside > div.categories-box > div.box-header {
+  text-align: center;
+}
+
+#main > article > aside > div.categories-box > div.box-header > h3 {
+  display: block;
+  margin: 0;
+  padding: 15px 2px;
+  font-size: 17px;
+  line-height: 1.1;
+  color: #373737;
+}
+
+#main > article > aside > div.categories-box > div.box-body {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 8px;
+}
+
+#main > article > aside > div.categories-box > div.box-body > ul {
+  position: relative;
+  width: 215px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  list-style: none;
+}
+
+#main > article > aside > div.categories-box > div.box-body > ul > li {
+  padding: 1px;
+  background: #eee;
+  color: #252525;
+  font-size: 18px;
+}
+
+#main > article > aside > div.categories-box > div.box-body > ul > li:nth-child(odd) {
+  background: #fff;
+}
+
+#main > article > aside > div.categories-box > div.box-body > ul > li > a {
+  color: #373737;
+  text-decoration: none;
+  font-weight:normal;
+}
+
+#main > article > aside > div.categories-box > div.box-body > ul > li > a > h5 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,3 +10,4 @@ var current = document.getElementById('current');
      el.className = "highlight";
      current = el;
   }
+
