@@ -9,4 +9,63 @@ INSERT INTO `user_login`(`ID_User`, `username`, `password`, `type`, `FirstName`,
 INSERT INTO `user_login`(`ID_User`, `username`, `password`, `type`, `FirstName`, `LastName`, `Mobile`, `Phone`, `email`, `CNP`, `Address`, `Data`, `Location`, `City`, `Postal_Code`, `NR_Vizite`) VALUES (5914,'roya30','1234',2,'Anesi','Roxana',0761551330,NULL,'roya@yahoo.com',9720902445168,'1972-09-02','Brasov','Brasor','Str.Traian,nr.14,bl.19,ap.13',68977,0);
 INSERT INTO `user_login`(`ID_User`, `username`, `password`, `type`, `FirstName`, `LastName`, `Mobile`, `Phone`, `email`, `CNP`, `Address`, `Data`, `Location`, `City`, `Postal_Code`, `NR_Vizite`) VALUES (9123,'gaby_66','1234',2,'Petrulea','Gabi',NULL,0257445168,'gabi@gamil.com',0691225123123,'1969-12-25','Bacau','Bacau','Str.Visinilor,nr.30,bl.56,ap.1',71366,0);
 
+INSERT INTO Hotels VALUES (508627,'Hotel Vega',NULL,0241488206,'In partea de N a Statiunii','900001');
+INSERT INTO Hotels VALUES (737151,'Hotel Palm Beach',NULL,024165298,'In partea de S a statiunii.','900001');
+INSERT INTO Hotels VALUES (916275,'Comodor',0723441628,0247887563,'In partea N a statiunii, la cativa pasi de plaja.','900001');
+INSERT INTO Hotels VALUES (562317,'Hotel Plai de Dor',NULL,0230417400,'Poiana Marului','341');
+INSERT INTO Hotels VALUES (228313,'Hotel Adelina',0744977615,NULL,'Moeciu - Brasov','');
+INSERT INTO Hotels VALUES (479766,'Hotel Ned',NULL,0330415582,'Brasov - Brasov','Str.Mijloc nr.79');
 
+INSERT INTO Camera VALUES (508627,3474,'Dubla Standard'  ,'N'  ,1,1,1,0,1,250);
+INSERT INTO Camera VALUES (508627,7869,'Dubla Superioara','E'  ,1,0,1,1,0,350);
+INSERT INTO Camera VALUES (508627,6304,'Family Room'     ,'W'  ,1,1,1,0,0,450);
+INSERT INTO Camera VALUES (508627,2807,'Junior Suite'    ,'S'  ,1,1,0,1,1,550);
+INSERT INTO Camera VALUES (508627,1142,'Senior Suite'    ,'N-E',1,1,1,0,0,650);
+INSERT INTO Camera VALUES (508627,1759,'Dubla Standard'  ,'S-E',0,1,0,1,0,250);
+INSERT INTO Camera VALUES (508627,1458,'Dubla Superioara','N-W',0,1,1,0,1,350);
+INSERT INTO Camera VALUES (508627,1803,'Family Room'     ,'S-W',0,1,0,1,0,450);
+INSERT INTO Camera VALUES (508627,3360,'Junior Suite'    ,'S-E',0,1,1,0,0,550);
+INSERT INTO Camera VALUES (508627,1423,'Senior Suite'    ,'W'  ,0,1,0,1,1,650);
+
+INSERT INTO Camera VALUES (916275,4831,'Camera Dubla','lac' ,1,1,0,1,0,437);
+INSERT INTO Camera VALUES (916275,3313,'Camera Dubla','lac' ,0,1,1,1,1,437);
+INSERT INTO Camera VALUES (916275,4595,'Camera Dubla','mare',1,1,0,1,0,460);
+INSERT INTO Camera VALUES (916275,9050,'Camera Dubla','mare',0,1,1,1,1,460);
+INSERT INTO Camera VALUES (916275,1636,'Camera Dubla','oras',1,1,0,1,0,635);
+INSERT INTO Camera VALUES (916275,8592,'Camera Dubla','oras',0,1,1,1,1,635);
+INSERT INTO Camera VALUES (916275,3039,'Apartament'  ,'mare',1,1,0,1,0,954);
+INSERT INTO Camera VALUES (916275,8069,'Apartament'  ,'lac' ,0,1,1,1,1,954);
+
+INSERT INTO Camera VALUES (737151,8205,'Camera Single','N'        ,1,1,1,1,1,339);
+INSERT INTO Camera VALUES (737151,7384,'Camera Single','N-W'      ,0,1,1,1,0,339);
+INSERT INTO Camera VALUES (737151,6973,'Camera Dubla','E'         ,0,1,0,1,1,428);
+INSERT INTO Camera VALUES (737151,7445,'Camera Dubla','S-E'       ,1,1,1,1,0,428);
+INSERT INTO Camera VALUES (737151,2604,'Camera Tripla','S'        ,0,1,1,1,1,547);
+INSERT INTO Camera VALUES (737151,9181,'Camera Tripla','S-W'      ,0,1,0,1,0,547);
+INSERT INTO Camera VALUES (737151,3124,'Apartament Standard','W'  ,1,1,1,1,1,631);
+INSERT INTO Camera VALUES (737151,1220,'Apartament Standard','E'  ,0,1,1,1,0,631);
+INSERT INTO Camera VALUES (737151,4356,'Apartament Jacuzzi','N-E' ,0,1,0,1,1,690);
+INSERT INTO Camera VALUES (737151,9420,'Apartament Jacuzzi','S-E' ,1,1,1,1,0,690);
+
+INSERT INTO CAMERA VALUES (562317,9963,'Single','N',0,1,1,1,0,443);
+INSERT INTO CAMERA VALUES (562317,5037,'Double','S',1,1,1,1,0,689);
+INSERT INTO CAMERA VALUES (562317,1251,'Triple','W',0,1,1,1,0,1325);
+INSERT INTO CAMERA VALUES (562317,5231,'Single','E',1,1,1,1,1,443);
+
+INSERT INTO CAMERA VALUES (228313,3001,'Single','N-E',0,1,0,1,0,484);
+INSERT INTO CAMERA VALUES (228313,3978,'Double','S-E',1,1,0,1,0,540);
+INSERT INTO CAMERA VALUES (228313,9121,'Triple','N-W',0,1,0,1,0,1119);
+INSERT INTO CAMERA VALUES (228313,7218,'Single','S-W',1,1,0,1,1,484);
+INSERT INTO CAMERA VALUES (228313,8318,'Double','N',0,1,0,1,0,540);
+
+INSERT INTO CAMERA VALUES (479766,3999,'Single','E',1,1,1,1,0,418);
+INSERT INTO CAMERA VALUES (479766,2720,'Double','N-E',0,1,1,1,0,633);
+INSERT INTO CAMERA VALUES (479766,6996,'Triple','S-W',1,1,1,1,1,1346);
+INSERT INTO CAMERA VALUES (479766,3186,'Double','W',1,1,1,1,0,633);
+
+INSERT INTO FACILITATI VALUES (508627,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,0);
+INSERT INTO FACILITATI VALUES (737151,1,1,1,1,0,1,0,0,1,1,1,1,0,1,1,0);
+INSERT INTO FACILITATI VALUES (916275,1,1,1,1,0,0,0,0,0,1,0,0,0,1,1,0);
+INSERT INTO FACILITATI VALUES (562317,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1);
+INSERT INTO FACILITATI VALUES (228313,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1);
+INSERT INTO FACILITATI VALUES (479766,0,1,0,0,0,0,0,0,0,1,1,0,1,0,1,1);
