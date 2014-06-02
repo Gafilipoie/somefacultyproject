@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-    <title>CEVA</title>
+    <title>Nelo</title>
 
     <link rel="stylesheet" type="text/css" href="resources/css/modalDialog.css">
     <link rel="stylesheet" type="text/css" href="resources/css/mainbody.css">
@@ -26,7 +26,11 @@
                                 </div>
                                 <hr>
                                 <div class="loginForm">
-                                    Email<br>Password<br>Remember Me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log In
+								 <form name="login" action="firstLogin.php" method="post" >
+								 Username: <input type="text" name="username"><br>
+								 Password: <input type="password" name="password"><br>
+								 <input type="submit" value="Submit">
+								 </form>
                                 </div>
                                 <hr>
                                 <div class="loginForgot">
@@ -39,7 +43,43 @@
                         <div id="modalSignup" class="modalSignup">
                             <div>
                                 <a href="#closeSignup" title="Close" class="closeSignup">X</a>
-                                Form Rezervation
+                                <div class="loginForm">
+								 <!-- <form name="login" action="" method="post" >
+								 Nume Hotel: <input type="text" name="hotelName"><br>
+								 Mobil: <input type="text" name="mobile"><br>
+								 Telefon Fix: <input type="text" name="phone"><br>
+								 Locatie: <input type="text" name="location"><br>
+								 Adresa: <input type="text" name="address"><br>
+								 Facilitati<br><input type="checkbox" name="pool" value="Bike">Piscina<br>
+										   <input type="checkbox" name="parking" value="Car">Parcare<br>
+										   <input type="checkbox" name="lift" value="Bike">Lift<br>
+										   <input type="checkbox" name="restaurant" value="Bike">Restaurant<br>
+										   <input type="checkbox" name="privateBeach" value="Bike">Plaja Privata<br>
+										   <input type="checkbox" name="spa" value="Bike">Spa<br>
+										   <input type="checkbox" name="fitness" value="Car">Sala Fitness<br>
+										   <input type="checkbox" name="force" value="Bike">Sala Culturism<br>
+										   <input type="checkbox" name="jacuzzi" value="Bike">Jacuzzi<br>
+										   <input type="checkbox" name="Internet" value="Bike">Internet<br>
+										   
+								 <input type="submit" value="Submit"> -->
+								 </form>
+								 <form name="login" action="" method="post" >
+								 Username: <input type="text" name="username"><br>
+								 Password: <input type="password" name="Password"><br>
+								 Nume: <input type="text" name="firstName"><br>
+								 Prenume: <input type="text" name="lastName"><br>
+								 Mobil: <input type="text" name="mobile"><br>
+								 Telefon Fix: <input type="text" name="phone"><br>
+								 Email: <input type="email" name="email"><br>
+								 CNP: <input type="text" name="CNP"><br>
+								 Adresa: <input type="text" name="address"><br>
+								 Data: <input type="date" name="date"><br>
+								 Locatie: <input type="text" name="location"><br>
+								 Oras: <input type="text" name="city"><br>
+								 Cod Postal: <input type="text" name="postalCode"><br>
+								 <input type="submit" value="Submit">
+								 </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,14 +108,9 @@
 
  	<div class="cover"></div>
 <!-- cover image -->
-<!-- 
- 	<div id='main'>
-    	<article>
-    		
-    	</article>
-    
- 	</div>
--->
+ 
+ 	<?php include ("home.php") ?>	
+
 <!-- main body -->
     		
  	<footer class="footer">
