@@ -158,7 +158,7 @@
 }
 
   
-#main > article > .hotel-content {
+#main > article > .hotelContent {
   float: left;
   width: 74.5%;
   min-height: 157px;
