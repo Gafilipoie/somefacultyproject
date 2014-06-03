@@ -9,6 +9,102 @@
  </head>
 
  <body>
+ 	  <header>
+        <div class="header-container">
+         <nav class="user-nav">
+            <div class="container">
+                <div class="panel-left">
+                    <div class="user-logo-state">
+                        Have an account?
+                        <a href="#modalLogin" class="login" role="button">Login</a>
+                        <div id="modalLogin" class="modalLogin">
+                            <div>
+                                <a href="#closeLogin" title="Close" class="closeLogin">X</a>
+                                <div class="loginTitle">
+                                    Login to Title
+                                </div>
+                                <hr>
+                                <div class="loginForm">
+                                 <form name="login" action="firstLogin.php" method="post" >
+                                 Username: <input type="text" name="username"><br>
+                                 Password: <input type="password" name="password"><br>
+                                 <input type="submit" value="Submit">
+                                 </form>
+                                </div>
+                                <hr>
+                                <div class="loginForgot">
+                                    Forgot your password?
+                                </div>
+                            </div>
+                        </div>
+                        /
+                        <a href="#modalSignup" class="register" role="button">Sign Up</a>
+                        <div id="modalSignup" class="modalSignup">
+                            <div>
+                                <a href="#closeSignup" title="Close" class="closeSignup">X</a>
+                                <div class="loginForm">
+                                 <!-- <form name="login" action="" method="post" >
+                                 Nume Hotel: <input type="text" name="hotelName"><br>
+                                 Mobil: <input type="text" name="mobile"><br>
+                                 Telefon Fix: <input type="text" name="phone"><br>
+                                 Locatie: <input type="text" name="location"><br>
+                                 Adresa: <input type="text" name="address"><br>
+                                 Facilitati<br><input type="checkbox" name="pool" value="Bike">Piscina<br>
+                                           <input type="checkbox" name="parking" value="Car">Parcare<br>
+                                           <input type="checkbox" name="lift" value="Bike">Lift<br>
+                                           <input type="checkbox" name="restaurant" value="Bike">Restaurant<br>
+                                           <input type="checkbox" name="privateBeach" value="Bike">Plaja Privata<br>
+                                           <input type="checkbox" name="spa" value="Bike">Spa<br>
+                                           <input type="checkbox" name="fitness" value="Car">Sala Fitness<br>
+                                           <input type="checkbox" name="force" value="Bike">Sala Culturism<br>
+                                           <input type="checkbox" name="jacuzzi" value="Bike">Jacuzzi<br>
+                                           <input type="checkbox" name="Internet" value="Bike">Internet<br>
+                                           
+                                 <input type="submit" value="Submit"> -->
+                                 </form>
+                                 <form name="login" action="" method="post" >
+                                 Username: <input type="text" name="username"><br>
+                                 Password: <input type="password" name="Password"><br>
+                                 Nume: <input type="text" name="firstName"><br>
+                                 Prenume: <input type="text" name="lastName"><br>
+                                 Mobil: <input type="text" name="mobile"><br>
+                                 Telefon Fix: <input type="text" name="phone"><br>
+                                 Email: <input type="email" name="email"><br>
+                                 CNP: <input type="text" name="CNP"><br>
+                                 Adresa: <input type="text" name="address"><br>
+                                 Data: <input type="date" name="date"><br>
+                                 Locatie: <input type="text" name="location"><br>
+                                 Oras: <input type="text" name="city"><br>
+                                 Cod Postal: <input type="text" name="postalCode"><br>
+                                 <input type="submit" value="Submit">
+                                 </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="panel-right"></ul></div>
+         </nav>
+
+         <nav class="menu-nav">
+            <div class="container">
+                <div class="panel-left">
+                    <a href="index.html">
+                        <img src="resources/css/images/logo.png">
+                        </img></a></div>
+
+                <div class="panel-right">
+                    <ul class="navigation-menu">
+                            <li><a id="current" class="highlight" onclick="highlight(this);" href="contact.html" title="Button">Contact</a></li>
+                            <li><a onclick="highlight(this);" href="index.html" title="Home">HOME</a></li></ul></div></div>
+         </nav> 
+        </div>
+    </header>
+<!-- header -->
+
+ 	<div class="cover"></div>
+<!-- cover image -->
+
  	<div id='main'>
     	<article>
     		
@@ -16,5 +112,25 @@
     	<!--<aside>aside</aside>-->
  	</div>
  	<!-- main body -->
+
+<footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-left">
+                <li><a href="#"><h5>ABOUT US</h5></a></li>
+                <li><a href="#"><h5>PARTNERS</h5></a></li>
+                <li><a href="contact.html"><h5>CONTACT US</h5></a></li>
+            </ul>
+            <span class="footer-right">
+                <h1>
+                    <span class="telefon">
+                        +44 (0) 20 7559 3510
+                    </span>
+                </h1>
+                <a href="nelo@gmail.com" style="float: right;">nelo@gmail.com</a>
+                <h5>Copyright 2014 NeLo</h5>
+            </span>
+        </div>
+    </footer>
+<!-- footer -->	
  </body>
 </html>

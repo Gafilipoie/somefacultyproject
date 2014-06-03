@@ -13,48 +13,93 @@ body > div.cover {
   background-size: cover;
 }
 
-ul {
-  padding: 0px;
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop {
+  float: left;
 }
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu {
+padding:0px;
+margin:0px;
+list-style-type:none;
+height:60px;
+display: inline-block;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li { float:left; }
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li > a {
+padding:0px 5px;
+display:block;
+color:#abaa66;
+text-decoration:none;
+font-size: 16px;
+text-decoration: underline;
+}
+/* Submenu */
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li > ul {
+position:absolute;
+left:-9999px;
+top:-9999px;
+list-style-type:none;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover { 
+  position:relative; 
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul {
+left:0px;
+top:20px;
+padding:0px;
+font-size: 16px;
+text-decoration: none;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul > li > a {
+padding:0px;
+display:block;
+width:85px;
+text-indent:15px;
+text-decoration: none;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul > li > a:hover { color: #abcc99; }
 
 header {
   z-index: 1;
   display: block;
   width: 100%;
-  height: 82px;
-  position: fixed;
+  height: 79px;
+  position: relative;
   background: #FFF;
-  box-shadow: 2px 2px 5px #888888; 
+  box-shadow: 2px 2px 5px #000; 
+
 }
 
 header > div.header-container {
   width: 100%;
   margin: 0 auto;
   background: #33495f;
+  background: url(images/header.png);
+  display: inline-block;
 }
 
 header > div.header-container > nav.user-nav {
   width: 75.5%;
-  height: 27px;
+  height: 25px;
   position: relative;
-  background: #33495f;
-  display: block;
+  display: inline-block;
    -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
    -webkit-order: 1;
            order: 1;
   margin-left: 11.9%;
+  white-space: nowrap;
    }
 
 header > div.header-container > nav.menu-nav{
   width: 75.5%;
    height: 55px;
-   background: #fff;
    -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
    -webkit-order: 1;
            order: 1;
   margin-left: 11.9%;
+  white-space: nowrap;
 }
 
 header > div.header-container > div.container {
@@ -64,18 +109,34 @@ header > div.header-container > div.container {
   width: 75%;
   display: -webkit-flex;
    -webkit-flex-flow: row;
+   white-space: nowrap;
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left {
   padding: 2px 4px;
   float: left;
+  display: inline-block;
+  width: 300px;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll {
+  display: inline;
+  float: left;
+   font-size: 16px;
 }
 
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state, a{
   color: rgba(255,255,255,.8);
+  color: #abaa66;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
 }
 
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > a.login{
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > a.login {
   margin-left: 10px;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > a.login:hover {
+  color: #abcc99;
 }
 
 header > div.header-container > nav.user-nav > div.container > ul.panel-right {
@@ -85,20 +146,19 @@ header > div.header-container > nav.user-nav > div.container > ul.panel-right {
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-left {
-  width: 260px;
-  height: 48px;
-  margin: 5px 0 0;
+  height: 50px;
+  margin-left: 30px;
   position: relative;
   float: left;
   overflow: hidden;
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-right {
-  width: 550px;
   height: 56px;
   position: relative;
   float: right;
   overflow: hidden;
+  white-space: nowrap;
 }
 
           nav.menu-nav div.panel-right div.search-button{
@@ -108,7 +168,6 @@ header > div.header-container > nav.menu-nav > div.container > div.panel-right {
           }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-right > ul.navigation-menu {
-  width: 550px;
   height: 56px;
   margin: 0;
   padding: 0;
@@ -117,6 +176,7 @@ header > div.header-container > nav.menu-nav > div.container > div.panel-right >
   display: list-item;
   text-align: -webkit-match-parent;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-right > ul.navigation-menu > li {
@@ -127,9 +187,10 @@ header > div.header-container > nav.menu-nav > div.container > div.panel-right >
   font-family: 'Open Sans';
   border-left: 1px solid;
   border-color: #DADEE2;
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-right > ul.navigation-menu > li > a {
@@ -188,7 +249,7 @@ footer {
    height: 100%;
    min-height: 188px;
    box-shadow: 2px 2px 5px #888888; 
-   background: url(images/footer.jpg);
+   background: url(images/footer.png);
    border-color: #202121;
    padding: 23px 0;
    position: relative;

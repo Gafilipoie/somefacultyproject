@@ -32,12 +32,7 @@
   padding: 10px;
   margin: 4px;
   margin-top: -30px;
-  background: #f9f8f4;
-  border: 1px solid;
-  border-radius: 0px;
-  border-color: #DADADA;
-  box-shadow: 2px 2px 5px #888888; 
-  -webkit-flex: 3 1 60%;
+    -webkit-flex: 3 1 60%;
           flex: 3 1 60%;
   -webkit-order: 2;
           order: 2;
