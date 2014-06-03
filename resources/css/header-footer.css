@@ -28,7 +28,7 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li > a {
 padding:0px 5px;
 display:block;
-color:#abaa66;
+color:#476898;
 text-decoration:none;
 font-size: 16px;
 text-decoration: underline;
@@ -57,7 +57,7 @@ width:85px;
 text-indent:15px;
 text-decoration: none;
 }
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul > li > a:hover { color: #abcc99; }
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul > li > a:hover { color: #478acb; }
 
 header {
   z-index: 1;
@@ -126,7 +126,7 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
 
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state, a{
   color: rgba(255,255,255,.8);
-  color: #abaa66;
+  color: #476898;
   overflow: hidden;
   white-space: nowrap;
   font-weight: bold;
@@ -136,7 +136,7 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
   margin-left: 10px;
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > a.login:hover {
-  color: #abcc99;
+  color: #478acb;
 }
 
 header > div.header-container > nav.user-nav > div.container > ul.panel-right {
