@@ -166,8 +166,8 @@
                 
                 <div class="footer-copywrite">
                     
-                    <h5><a href="index.php"img src="resources/imagini/footer-logo.png" height="42" width="129"></a><br>Universitatea Alexandru Ioan Cuza, Strada Gen. Berthelot 16, Iasi<br>Copyright 2014 | neLo</h5>
-                </dvi>
+                    <h5><a href="index.php"><img src="resources/imagini/footer-logo.png" height="42" width="129"></a><br>Universitatea Alexandru Ioan Cuza, Strada Gen. Berthelot 16, Iasi<br>Copyright 2014 | neLo</h5>
+                </div>
             </div>
         </div>
     </footer>
