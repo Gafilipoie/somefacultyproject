@@ -11,7 +11,7 @@
  </head>
 
  <body>
-    <header>
+    <header class="nav-down">
         <div class="header-container">
         <nav class="user-nav">
             <div class="container">
@@ -55,15 +55,13 @@
                                                 </div>
                                                 <hr>
                                                 <div class="loginForm">
-                                                 <form name="login" action="" method="post" >
+                                                 <form name="login" action="register1.php" method="post" >
                                                     <div class="form1">
                                                         First Name: <input type="text" name="firstName"><br>
                                                         Adress: <input type="text" name="address" style="margin-left: 28px;"><br>
                                                         City: <input type="text" name="city" style="margin-left: 48px;"><br>
                                                         CNP: <input type="text" name="CNP" style="margin-left: 44px;"><br>
                                                         Mobile: <input type="text" name="mobile" style="margin-left: 28px;"><br><br>
-                                                        Username: <input type="text" name="username" style="margin-left: 8px;"><br>
-                                                        Email: <input type="email" name="email" style="margin-left: 38px;"><br>
                                                     </div>
                                                     <div class="form2">
                                                         Last Name: <input type="text" name="lastName" style="margin-left: 10px;"><br>
@@ -71,7 +69,12 @@
                                                         Postal Code: <input type="text" name="postalCode"><br>
                                                         Birth Date: <input type="date" name="date" style="margin-left: 12.1px;"><br>
                                                         Phone: <input type="text" name="phone" style="margin-left: 40px;"><br><br>
-                                                        Password: <input type="password" name="Password" style="margin-left: 19px;"><br><br>
+                                                    </div>
+                                                    <div class="form3">
+                                                        Username: <input type="text" name="username" style="margin-left: 8px;">
+                                                        Email: <input type="email" name="email" style="margin-left: 82px;"><br>
+                                                        Password: <input type="password" name="Password" style="margin-left: 13px;">
+                                                        Confirm Password: <input type="password" name="Password" style="margin-left: 0px;"><br><br>
                                                         <input type="submit" value="Submit" style="float: right; width: 90px; height: 30px; font-weight: bold;"> 
                                                     </div>                              
                                                  </form>
@@ -88,7 +91,7 @@
                                                 </div>
                                                 <hr>
                                                 <div class="loginForm">
-                                                 <form name="login" action="" method="post" >
+                                                 <form name="login" action="register2.php" method="post" >
                                                     <div class="form1">
                                                         Hotel Name: <input type="text" name="hotelName"><br>
                                                         Location: <input type="text" name="location" style="margin-left: 24px;"><br>

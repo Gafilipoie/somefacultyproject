@@ -147,7 +147,7 @@
             box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);   
 }
 .modalSignupUser > div {
-	width: 550px;
+	width: 600px;
 	min-height: 400px;
 	position: relative;
 	margin: 6% auto;
@@ -220,7 +220,6 @@
 	text-align: left;
 }
 .modalSignupUser > div > .loginForm {
-	width: 510px;
 	min-height: 100px;
 	max-height: 100px;
 	float: left;
@@ -252,16 +251,18 @@
 	text-align: left;
 }
 div.form1 {
-	width: 245px;
-	height: 300px;
 	margin: 1px;
 	margin-left: 1px;
 	float: left;
 	position: relative;
 }
 div.form2 {
-	width: 245px;
-	height: 300px;
+	margin: 1px;
+	float: left;
+	position: relative;
+}
+
+div.form3 {
 	margin: 1px;
 	float: left;
 	position: relative;
