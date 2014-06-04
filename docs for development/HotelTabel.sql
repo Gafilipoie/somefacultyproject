@@ -1,7 +1,7 @@
 CREATE TABLE User_Login
 (
 ID_User INT (4),
-username VARCHAR(20),
+username VARCHAR(20) NOT NULL,
 password int NOT NULL,
 type INT (1) NULL,
 FirstName varchar(30) NULL,
@@ -42,6 +42,8 @@ FOREIGN KEY (ID_Camere) REFERENCES Hotels(ID_Hotel)
 CREATE TABLE Hotels
 (
 ID_Hotel INT (6),
+h_username VARCHAR(20) NOT NULL,
+h_password int NOT NULL,
 h_type int (1),
 Name VARCHAR (30),
 Mobile INT (10),

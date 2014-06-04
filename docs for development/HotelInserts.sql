@@ -9,12 +9,12 @@ INSERT INTO user_login VALUES (1547,'ali007',1234,2,'Dascalu','Alin',NULL,024633
 INSERT INTO user_login VALUES (5914,'roya30',1234,2,'Anesi','Roxana',0761551330,NULL,'roya@yahoo.com',9720902445168,'1972-09-02','Brasov','Brasor','Str.Traian,nr.14,bl.19,ap.13',68977,0);
 INSERT INTO user_login VALUES (9123,'gaby_66',1234,2,'Petrulea','Gabi',NULL,0257445168,'gabi@gamil.com',0691225123123,'1969-12-25','Bacau','Bacau','Str.Visinilor,nr.30,bl.56,ap.1',71366,0);
 
-INSERT INTO Hotels VALUES (508627,null,'Hotel Vega',NULL,0241488206,'In partea de N a Statiunii','900001');
-INSERT INTO Hotels VALUES (737151,null,'Hotel Palm Beach',NULL,024165298,'In partea de S a statiunii.','900001');
-INSERT INTO Hotels VALUES (916275,null,'Comodor',0723441628,0247887563,'In partea N a statiunii, la cativa pasi de plaja.','900001');
-INSERT INTO Hotels VALUES (562317,null,'Hotel Plai de Dor',NULL,0230417400,'Poiana Marului','341');
-INSERT INTO Hotels VALUES (228313,null,'Hotel Adelina',0744977615,NULL,'Moeciu - Brasov','');
-INSERT INTO Hotels VALUES (479766,null,'Hotel Ned',NULL,0330415582,'Brasov - Brasov','Str.Mijloc nr.79');
+INSERT INTO Hotels VALUES (508627,'mouse',1234,null,'Hotel Vega',NULL,0241488206,'In partea de N a Statiunii','900001');
+INSERT INTO Hotels VALUES (737151,'diced ',1234,null,'Hotel Palm Beach',NULL,024165298,'In partea de S a statiunii.','900001');
+INSERT INTO Hotels VALUES (916275,'pouting ',1234,null,'Comodor',0723441628,0247887563,'In partea N a statiunii, la cativa pasi de plaja.','900001');
+INSERT INTO Hotels VALUES (562317,'stabbing ',1234,null,'Hotel Plai de Dor',NULL,0230417400,'Poiana Marului','341');
+INSERT INTO Hotels VALUES (228313,'dropping ',1234,null,'Hotel Adelina',0744977615,NULL,'Moeciu - Brasov','');
+INSERT INTO Hotels VALUES (479766,'loud ',1234,null,'Hotel Ned',NULL,0330415582,'Brasov - Brasov','Str.Mijloc nr.79');
 
 INSERT INTO Camera VALUES (508627,3474,'Dubla Standard'  ,'N'  ,1,1,1,0,1,250);
 INSERT INTO Camera VALUES (508627,7869,'Dubla Superioara','E'  ,1,0,1,1,0,350);
