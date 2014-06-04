@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/modalDialog.css">
     <link rel="stylesheet" type="text/css" href="resources/css/mainbody.css">
     <link rel="stylesheet" type="text/css" href="resources/css/header-footer.css">
- </head>
+</head>
 
  <body>
     <header>
@@ -137,7 +137,7 @@
     <div id='main'>
         <article>
             <div class="heading">
-                Contact Us
+                About Us
                 <span class="red"></span>
                 <span class="yellow"></span>
                 <span class="green"></span>
@@ -167,7 +167,7 @@
                 <div class="footer-copywrite">
                     
                     <h5><a href="index.php"><img src="resources/imagini/footer-logo.png" height="42" width="129"></a><br>Universitatea Alexandru Ioan Cuza, Strada Gen. Berthelot 16, Iasi<br>Copyright 2014 | neLo</h5>
-                </div>
+                </dvi>
             </div>
         </div>
     </footer>
