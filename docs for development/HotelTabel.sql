@@ -10,10 +10,10 @@ Mobile INT (10) NULL,
 Phone INT (10) NULL,
 email VARCHAR(30) NULL,
 CNP INT (13) NULL,
-Address varchar(100) NULL,
 Data DATE NULL,
 Location VARCHAR (30) NULL,
 City VARCHAR(20) NULL,
+Address varchar(100) NULL,
 Postal_Code INT(5) NULL, 
 NR_Vizite INT (3) NULL,
 PRIMARY KEY (ID_User)
@@ -42,14 +42,14 @@ FOREIGN KEY (ID_Camere) REFERENCES Hotels(ID_Hotel)
 CREATE TABLE Hotels
 (
 ID_Hotel INT (6),
+h_type int (1),
 Name VARCHAR (30),
 Mobile INT (10),
 Phone INT (10),
 Locatie VARCHAR (30),
 Address VARCHAR(100),
-ID_Camere INT (3) NOT NULL,
 PRIMARY KEY (ID_Hotel)
-)
+);
 
 
 
@@ -66,7 +66,12 @@ Sala_Fitness INT(1),
 Sala_Forta INT(1),
 Jacuzzi INT(1),
 Internet INT(1),
-Pret INT(7),
+Bar INT (1),
+Sauna INT (1),
+Foisor INT (1),
+Teren_Sport INT (1),
+Terasa INT (1),
+Gratar INT (1),
 FOREIGN KEY (ID_Hotel) REFERENCES Hotels(ID_Hotel)
 );
 
@@ -75,6 +80,7 @@ FOREIGN KEY (ID_Hotel) REFERENCES Hotels(ID_Hotel)
 CREATE TABLE Rezervari
 (
 COD INT (5) AUTO_INCREMENT ,
+r_show int (1),
 ID_User INT(4)NOT NULL,
 ID_Hotel INT(6)NOT NULL,
 Start_date DATE,
