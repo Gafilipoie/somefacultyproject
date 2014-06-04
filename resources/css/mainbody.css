@@ -87,16 +87,19 @@
   width: 32.5%;
   padding-right: 4px;
   padding-left: 4px;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
 }
 
-#main > article > div.hotel-block > #block-body {
-  height: 236px;
-  min-height: 236px;
+#main > article > div.hotel-block > div.block-body {
   display: block;
   overflow: hidden;
   position: relative;
   background: #f9f8f4;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .block-picture {
@@ -108,17 +111,59 @@
   -webkit-transform-style: preserve-3d;
 }
 
+.imgWrap {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 2px;
+  height: 246px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 95px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #334455;
+  visibility: hidden;
+  opacity: 0;
+  vertical-align: middle;
+  text-align: center;
+  line-height: normal;
+}
+
+.imgWrap:hover {
+  opacity:0.6; 
+  color:#000000; 
+  font-size:20px; 
+  font-weight:900; 
+  font-family:"Times New Roman", Times, serif;
+}
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
 #main > article > div.hotel-block > div.block-footer {
+  display: inherit;
+  overflow: auto;
+  position: relative;
   padding-top: 3px;
   background: #f9f8f4;
 }
 
 #main > article > div.hotel-block > div.block-footer > div.hotel-detail {
   float: left;
-  max-width: 240px;
+  display: block;
+  margin-left: 10px;
+   position: relative;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-detail > span.hotel-name {
+#main > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-type {
+  margin-left: 25px;
+  float: left;
   display: block;
   color: #373737;
   font-family: 'Bree Serif';
@@ -126,11 +171,24 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 17px;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+#main > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-name {
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 21px;
   line-height: 32px;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-detail > span.hotel-location {
+#main > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-location {
+  float: left;
   display: block;
   color: #373737;
   font-family: 'Bree Serif';
@@ -146,12 +204,36 @@
   float: right;
   width: 104px;
   margin-top: 13px;
-  margin-bottom: 40px;
-  width: 33.33333333%;
+  
   padding-right: 5px;
   padding-left: 5px;
 }
 
+#main > article > div.hotel-block > div.block-footer > div.hotel-description {
+  float: left;
+
+  margin-top: 5px;
+  margin-bottom: 3px;
+  width: 96%;
+  min-height: 150px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+}
+
+#main > article > div.hotel-block > div.block-footer > div.hotel-description > p {
+font-weight:normal;
+color:#827678;
+letter-spacing:0pt;
+word-spacing:0pt;
+font-size:12px;
+text-align:left;
+font-family:lucida sans unicode, lucida grande, sans-serif;
+line-height:1;
+}
   
 #main > article > .hotelContent {
   float: left;

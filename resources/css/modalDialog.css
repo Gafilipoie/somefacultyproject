@@ -111,8 +111,8 @@
             box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 .modalReservation > div {
-	width: 500px;
-	min-height: 500px;
+	width: 800px;
+	min-height: 400px;
 	position: relative;
 	margin: 6% auto;
 	padding: 5px 20px 13px 20px;
