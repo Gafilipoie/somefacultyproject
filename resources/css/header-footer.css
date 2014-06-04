@@ -4,7 +4,7 @@ body {
    line-height: 1.5;
    background: #f9f8f4;
    margin: 0px;
-   padding-top: 79px;
+   padding-top: 54px;
   }
 
 body > div.cover {
@@ -276,20 +276,62 @@ footer > div.footer-container > ul.footer-left > li > a {
   text-decoration: none;
 }
 
+footer > div.footer-container > ul.footer-left > li > a > h5 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+}
+
 footer > div.footer-container > ul.footer-left > li > a:hover {
   color: #006694;
   text-decoration: underline;
 }
 
-footer > div.footer-container > span.footer-right {
+footer > div.footer-container > div.footer-right {
   float: right;
   font-size: 14px;
   color: #abaaaa;
 }
 
-footer > div.footer-container > span.footer-right > h1 > span.telefon {
-  background: url(images/icon_phone.png) no-repeat left 1px;
-  margin: 9px 0 0 16px;
-  padding: 0px 0 0 25px;
+footer > div.footer-container > div.footer-right > div.telefon {
+  text-align: right;
+  
+  margin: 0px 0 0 5px;
+  padding: 0px 0 0 0px;
 }
+
+
+
+footer > div.footer-container > div.footer-right > div.telefon > span {
+  font-size: 28px;
+  margin: 0px;
+}
+
+footer > div.footer-container > div.footer-right > div.telefon > span > img {
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+footer > div.footer-container > div.footer-right > div.telefon > a {
+  color: #abaaaa;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+footer > div.footer-container > div.footer-right > div.footer-copywrite {
+  border: 1px dotted #909090;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  margin: 30px 0 10px;
+  padding: 14px 0;
+}
+
+footer > div.footer-container > div.footer-right > div.footer-copywrite > h5 {
+ float: right;
+ margin-top: 5px;
+ text-align: right;
+ font-weight: normal;
+}
+
 

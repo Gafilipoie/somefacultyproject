@@ -197,22 +197,26 @@
     </div>
 <!-- main body -->
     		
- 	<footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <ul class="footer-left">
                 <li><a href="about.html"><h5>ABOUT US</h5></a></li>
                 <li><a href="partners.html"><h5>PARTNERS</h5></a></li>
                 <li><a href="contact.html"><h5>CONTACT US</h5></a></li>
             </ul>
-            <span class="footer-right">
-                <h1>
-                    <span class="telefon">
-                        +44 (0) 20 7559 3510
-                    </span>
-                </h1>
-                <a href="nelo@gmail.com" style="float: right;">neLo@gmail.com</a>
-                <h5>Copyright 2014 neLo</h5>
-            </span>
+            <div class="footer-right">
+                <div class="telefon">
+                    
+                    <span><img src="resources/imagini/icon_phone.png">0232 201 XXX</span><br>
+                    <a href="mailto:nelo@gmail.com" style="float: right;">neLo@gmail.com</a>
+                    
+                </div>
+                
+                <div class="footer-copywrite">
+                    
+                    <h5><a href=""index.html><img src="resources/imagini/footer-logo.png" height="42" width="129"></a><br>Universitatea Alexandru Ioan Cuza, Strada Gen. Berthelot 16, Iasi<br>Copyright 2014 | neLo</h5>
+                </dvi>
+            </div>
         </div>
     </footer>
 <!-- footer -->
