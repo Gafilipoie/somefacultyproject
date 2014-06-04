@@ -116,14 +116,14 @@
         <nav class="menu-nav">
             <div class="container">
                 <div class="panel-left">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="resources/css/images/logo.png">
                         </img></a></div>
 
                 <div class="panel-right">
-                    <a href="index.html" title="Home" class="Button">Home</a>
-                    <a href="search.html" title="Home" class="Button">Search</a>
-                    <a href="contact.html" title="Home" class="Button">Contact Us</a>
+                    <a href="index.php" title="Home" class="Button">Home</a>
+                    <a href="search.php" title="Home" class="Button">Search</a>
+                    <a href="contact.php" title="Home" class="Button">Contact Us</a>
                 </div>
             </div>
          </nav> 
