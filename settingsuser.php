@@ -27,16 +27,17 @@
                                     <div class="loginTitle">
                                         Login to neLo
                                     </div>
+                                    <hr>
                                     <div class="loginForm">
                                      <form name="login" action="firstLogin.php" method="post" >
                                      Username: <input type="text" name="username"><br>
                                      Password: <input type="password" name="password" style="margin-left: 7px;"><br>
-                                     <input type="submit" value="Login" class="login-button">
+                                     <input type="submit" value="Submit">
                                      </form>
                                     </div>
                                     <hr>
                                     <div class="loginForgot">
-                                        <a href="#">Forgot your password?</a>
+                                        Forgot your password?
                                     </div>
                                 </div>
                             </div>
@@ -53,6 +54,7 @@
                                                 <div class="loginTitle">
                                                     Register User
                                                 </div>
+                                                <hr>
                                                 <div class="loginForm">
                                                  <form name="login" action="register1.php" method="post" >
                                                     <div class="form1">
@@ -63,18 +65,18 @@
                                                         Mobile: <input type="text" name="mobile" style="margin-left: 28px;"><br><br>
                                                     </div>
                                                     <div class="form2">
-                                                        Last Name: <input type="text" name="lastName" style="margin-left: 49px;"><br>
-                                                        Location: <input type="text" name="location" style="margin-left: 63px;"><br>
-                                                        Postal Code: <input type="text" name="postalCode" style="margin-left: 41px;"><br>
-                                                        Birth Date: <input type="date" name="date" style="margin-left: 51px;"><br>
-                                                        Phone: <input type="text" name="phone" style="margin-left: 79px;"><br><br>
+                                                        Last Name: <input type="text" name="lastName" style="margin-left: 10px;"><br>
+                                                        Location: <input type="text" name="location" style="margin-left: 24px;"><br>
+                                                        Postal Code: <input type="text" name="postalCode"><br>
+                                                        Birth Date: <input type="date" name="date" style="margin-left: 12.1px;"><br>
+                                                        Phone: <input type="text" name="phone" style="margin-left: 40px;"><br><br>
                                                     </div>
                                                     <div class="form3">
                                                         Username: <input type="text" name="username" style="margin-left: 8px;">
                                                         Email: <input type="email" name="email" style="margin-left: 82px;"><br>
                                                         Password: <input type="password" name="Password" style="margin-left: 13px;">
                                                         Confirm Password: <input type="password" name="Password" style="margin-left: 0px;"><br><br>
-                                                        <input type="submit" value="Register" class="login-button"> 
+                                                        <input type="submit" value="Submit" style="float: right; width: 90px; height: 30px; font-weight: bold;"> 
                                                     </div>                              
                                                  </form>
                                                 </div>
@@ -88,27 +90,20 @@
                                                 <div class="loginTitle">
                                                     Register Hotel
                                                 </div>
+                                                <hr>
                                                 <div class="loginForm">
                                                  <form name="login" action="register2.php" method="post" >
                                                     <div class="form1">
                                                         Hotel Name: <input type="text" name="hotelName"><br>
-                                                        Contry: <input type="text" name="h_country" style="margin-left: 36px;"><br>
-                                                        City: <input type="text" name="h_city" style="margin-left: 54px;"><br>
-                                                        Postal Code: <input type="text" name="h_postalCode">
+                                                        Location: <input type="text" name="location" style="margin-left: 24px;"><br>
+                                                        Adress: <input type="text" name="address" style="margin-left: 33px;"><br>
                                                     </div>
+
                                                     <div class="form2">
-                                                        Adress: <input type="text" name="h_address" style="margin-left: 77px;"><br>
-                                                        Mobil: <input type="text" name="h_mobile" style="margin-left: 85px;"><br>
-                                                        Phone: <input type="text" name="h_phone" style="margin-left: 83px;"><br>
-                                                        Fax: <input type="text" name="h_fax" style="margin-left: 100px;"><br><br>
-                                                    </div>
-                                                    <div class="form3">
-                                                        Username: <input type="text" name="h_username" style="margin-left: 15px;">
-                                                        Email: <input type="email" name="h_email" style="margin-left: 85px;"><br>
-                                                        Password: <input type="password" name="h_password" style="margin-left: 20px;">
-                                                        Confirm Password: <input type="password" name="h_confirmPassword"><br>
-                                                        <input type="submit" value="Register" class="login-button" style="margin-top: 66px;">  
-                                                    </div>
+                                                         Mobile: <input type="text" name="mobile"><br>
+                                                         Phone: <input type="text" name="phone" style="margin-left: 8px;"><br><br>
+                                                         <input type="submit" value="Submit" style="float: right; width: 90px; height: 30px; font-weight: bold;"> 
+                                                    </div>  
                                                  </form>
                                                 </div>
                                             </div>
@@ -119,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-right"><a href="#" class="account-settings">Marius</a></div></div>
+                <ul class="panel-right"></ul></div>
          </nav>
 
         <nav class="menu-nav">
