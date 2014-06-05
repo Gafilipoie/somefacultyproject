@@ -1,19 +1,3 @@
-
-
-
-<?php
-    /**
-     * Starting a session and checking if a cookie is set.
-     */
-    session_start();
-
-    if(isset($_COOKIE["Nelo"])) {
-        $_SESSION['username'] = $_COOKIE["Nelo"];
-        //header('Location: profile_main.php');
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -24,20 +8,19 @@
     <link rel="stylesheet" type="text/css" href="resources/css/modalDialog.css">
     <link rel="stylesheet" type="text/css" href="resources/css/mainbody.css">
     <link rel="stylesheet" type="text/css" href="resources/css/header-footer.css">
-
-
+    <link rel="stylesheet" type="text/css" href="resources/css/settings.css">
 </head>
 
  <body>
- 	<header class="nav-down">
+    <header class="nav-down">
         <div class="header-container">
- 		<nav class="user-nav">
- 			<div class="container">
- 				<div class="panel-left">
- 					<div class="user-logo-state">
+        <nav class="user-nav">
+            <div class="container">
+                <div class="panel-left">
+                    <div class="user-logo-state">
                         <div class="loginAll">
-     						Have an account?
-     						<a href="#modalLogin" class="login" role="button">Login</a>
+                            Have an account?
+                            <a href="#modalLogin" class="login" role="button">Login</a>
                             <div id="modalLogin" class="modalLogin">
                                 <div>
                                     <a href="#closeLogin" title="Close" class="closeLogin">X</a>
@@ -46,11 +29,11 @@
                                     </div>
                                     <hr>
                                     <div class="loginForm">
-    								 <form name="login" action="firstLogin.php" method="post" >
-    								 Username: <input type="text" name="username"><br>
-    								 Password: <input type="password" name="password" style="margin-left: 7px;"><br>
-    								 <input type="submit" value="Submit">
-    								 </form>
+                                     <form name="login" action="firstLogin.php" method="post" >
+                                     Username: <input type="text" name="username"><br>
+                                     Password: <input type="password" name="password" style="margin-left: 7px;"><br>
+                                     <input type="submit" value="Submit">
+                                     </form>
                                     </div>
                                     <hr>
                                     <div class="loginForgot">
@@ -58,7 +41,7 @@
                                     </div>
                                 </div>
                             </div>
- 						|
+                        |
                         </div>
                         <div class="drop">
                             <ul class="drop_menu">
@@ -131,17 +114,17 @@
                         </div>
                     </div>
                 </div>
- 				<div class="panel-right"><a href="#" class="account-settings">Marius</a></div></div>
+                <ul class="panel-right"></ul></div>
          </nav>
 
- 		<nav class="menu-nav">
- 			<div class="container">
- 				<div class="panel-left">
+        <nav class="menu-nav">
+            <div class="container">
+                <div class="panel-left">
                     <a href="index.php">
                         <img src="resources/css/images/logo.png">
                         </img></a></div>
 
- 				<div class="panel-right">
+                <div class="panel-right">
                     <a href="index.php" title="Home" class="Button">Home</a>
                     <a href="search.php" title="Home" class="Button">Search</a>
                     <a href="contact.php" title="Home" class="Button">Contact Us</a>
@@ -151,54 +134,59 @@
         </div>
     </header>
 <!-- header -->
-
- 	<div class="cover"></div>
-<!-- cover image -->
- 
- 	
-
+    <br><br>
     <div id='main'>
         <article>
-            <div class="heading">
-                Hotels
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
-                <span class="blue"></span></div>
-
-            <div class="hotel-block">
-                <div class="block-body">
-                    <a href="hotels.php">
-                        <div class="imgWrap">
-                            <img src="resources/imagini/bavaria.jpg" class="block-picture">
-                            <p class="imgDescription">---------- Details ----------</p>
-                        </div>
-                    </a></div>
-                <div class="block-footer">
-                    <div class="hotel-detail">
-                        <div class="hotel-name">Hotel Bavaria</div>
-                        <div class="hotel-location"><img src="resources/imagini/location-icon.png" style="width:15px; height: 15px; margin-top: 1px; margin-right: 3px">Cluj</div>
-                        <div class="hotel-type"><img src=""><img src="resources/imagini/type-icon.png" style="width:15px; height: 15px; margin-top: 1px; margin-right: 3px">Hotel</div></div>
-                    <div class="rezervation">
-                        <a href="#modalReservation">Book Now!</a>
-
-                        <div id="modalReservation" class="modalReservation">
-                            <div>
-                                <a href="#closeReservation" title="Close" class="closeReservation">X</a>
-                                Form Rezervation
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hotel-description">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-                    </div></div></div>
-            
+            <div class="settings-heading">
+                <div class="title">Settings</div>
+            </div>
+            <div class="settings-main">
+                <div class="subtitle">Personal details</div>
+                <div class="edit"><a href="#" class="edit">Edit</a></div>
+                <hr>
+                <div class="info">Name</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Username</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Adress</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">City</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Country</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Postal Code</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">CNP</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Birth Date</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Mobile</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Phone</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Email Adress</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Password</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="edit"><a href="#" class="edit">Save</a></div>
+            </div>
         </article>
     <!--<aside>aside</aside>-->
     </div>
 <!-- main body -->
-    		
+
     <footer class="footer">
         <div class="footer-container">
             <ul class="footer-left">
@@ -217,7 +205,7 @@
                 <div class="footer-copywrite">
                     
                     <h5><a href="index.php"><img src="resources/imagini/footer-logo.png" height="42" width="129"></a><br>Universitatea Alexandru Ioan Cuza, Strada Gen. Berthelot 16, Iasi<br>Copyright 2014 | neLo</h5>
-                </dvi>
+                </div>
             </div>
         </div>
     </footer>
