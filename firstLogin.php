@@ -1,9 +1,6 @@
 <?php
 $username=$_POST['username']; 
 $password=$_POST['password']; 
-
-
-
 $host="fenrir.info.uaic.ro"; // Host name 
 $db_username="NELO"; // Mysql username 
 $db_password="sjOqapXt5L"; // Mysql password 
