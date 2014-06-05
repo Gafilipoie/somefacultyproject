@@ -114,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="panel-right"></ul></div>
+                <div class="panel-right"><a href="#" class="account-settings">Marius</a></div></div>
          </nav>
 
         <nav class="menu-nav">
