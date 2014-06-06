@@ -143,12 +143,12 @@
 <!-- cover image -->
 
     <div id='main'>
-        <article class="contact-us">
+        <article class="background">
             <div class="heading">
                 Contact Us
                 <hr>
             </div>
-            <div class="contact-form">
+            <div class="container">
                 <div class="contact-info">
                     <h4>ROMANIA - IASI</h4>
                     <p>Universitatea Alexandru Ioan Cuza<br>

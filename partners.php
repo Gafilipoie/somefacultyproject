@@ -143,15 +143,18 @@
 <!-- cover image -->
 
     <div id='main'>
-        <article>
+        <article class="background">
             <div class="heading">
                 Partners
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
-                <span class="blue"></span>
+                <hr>
             </div>
-            
+            <div class="container">
+                <div class="partners-logo">
+                    <img src="resources/imagini/partners/fii.png">
+                    <img src="resources/imagini/partners/asii.png">
+                </div>
+
+            </div>
         </article>
     <!--<aside>aside</aside>-->
     </div>

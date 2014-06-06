@@ -327,7 +327,7 @@ line-height:1;
 
 
 
-#main > article.contact-us {
+#main > article.background {
   background-color: #fff;
   width: 76%;
   padding: 10px;
@@ -338,17 +338,27 @@ line-height:1;
   -webkit-order: 2;
           order: 2;
           -webkit-box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
--moz-box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
-box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
+  -moz-box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
+  box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
-#main > article.contact-us > div.heading {
+#main > article.background > div.heading {
   font-weight: bold;
   font-size: 35px;
   margin: 0px;
 }
 
-#main > article.contact-us > div.heading > hr {
+#main > article.background > div.heading > p {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+#main > article.background > div.heading > hr {
   width: 92.5%;
   display: block;
   height: 1px;
@@ -360,19 +370,19 @@ box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
   box-shadow: 0px 0px 0px #888888;
 }
 
-#main > article > div.contact-form {
+#main > article.background > div.container {
   width: 96%;
   float: left;
   margin: 10px;
   padding: 10px;
 }
 
-#main > article > div.contact-form > div.contact-info {
+#main > article.background > div.container > div.contact-info {
   float: left;
   margin-left: 100px;
 }
 
-#main > article > div.contact-form > div.contact-info > h4 {
+#main > article.background > div.container > div.contact-info > h4 {
   margin: 15px 0 5px;
   padding: 0px;
   font-size: 22px;
@@ -382,7 +392,7 @@ box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
   font-style: normal;
 }
 
-#main > article > div.contact-form > div.contact-info > p {
+#main > article.background > div.container > div.contact-info > p {
   margin: 0 0 10px;
   padding: 0px;
   text-align: left;
@@ -393,15 +403,47 @@ box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
   font-style: normal;
 }
 
-#main > article > div.contact-form > div.contact-info > p > a {
+#main > article.background > div.container > div.contact-info > p > a {
   text-decoration: none;
   color: #008CD2;
   cursor: auto;
   font-weight: normal;
 }
 
-#main > article > div.contact-form > div.map {
+#main > article.background > div.container > div.map {
   float: right;
   margin-right: 100px;
 }
 
+#main > article.background > div.container > div.partners-logo {
+  float: left;
+  margin-left: 100px;
+  vertical-align: middle;
+}
+
+#main > article.background > div.container > div.partners-logo > img {
+  margin: 5px;
+}
+
+#main > article.background > div.container > div.about-info {
+  float: left;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+
+#main > article.background > div.container > div.about-info > p {
+  margin: 0 0 10px;
+  padding: 0px;
+  text-align: left;
+  font-size: 18px;
+  color: #5a5a5a;
+  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#main > article.background > div.container > div.about-picture {
+  float: right;
+  margin-right: 100px;
+}
