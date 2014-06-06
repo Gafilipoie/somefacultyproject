@@ -47,8 +47,8 @@
                                     </div>
                                     <div class="loginForm">
     								 <form name="login" action="firstLogin.php" method="post" >
-    								 Username: <input type="text" id="login_id" name="username"><br>
-    								 Password: <input type="password" id="password_id" name="password" style="margin-left: 7px;"><br>
+    								 Username: <input type="text" id="login_id" maxlength="20" name="username"><br>
+    								 Password: <input type="password" id="password_id" maxlength="20" name="password" style="margin-left: 7px;"><br>
     								 <input type="submit" value="Login" class="login-button">
     								 </form>
                                     </div>
@@ -74,24 +74,24 @@
                                                 <div class="loginForm">
                                                  <form name="login" action="register1.php" method="post" >
                                                     <div class="form1">
-                                                        First Name: <input type="text"  id="u_firstName_id" autocomplete="off" name="firstName" ><br>
-                                                        Adress: <input type="text" id="u_address_id" autocomplete="off" name="address" style="margin-left: 28px;"><br>
-                                                        City: <input type="text" id="u_city_id" autocomplete="off" name="city" style="margin-left: 48px;"><br>
-                                                        CNP: <input type="text"  id="u_cnp_id" autocomplete="off" name="CNP" style="margin-left: 44px;"><br>
-                                                        Mobile: <input type="text" id="u_mobile_id" autocomplete="off" name="mobile" style="margin-left: 28px;"><br><br>
+                                                        First Name: <input type="text"  id="u_firstName_id" maxlength="20" autocomplete="off" name="firstName" ><br>
+                                                        Adress: <input type="text" id="u_address_id" maxlength="20" autocomplete="off" name="address" style="margin-left: 28px;"><br>
+                                                        City: <input type="text" id="u_city_id" maxlength="20" autocomplete="off" name="city" style="margin-left: 48px;"><br>
+                                                        CNP: <input type="text"  id="u_cnp_id" maxlength="20" autocomplete="off" name="CNP" style="margin-left: 44px;"><br>
+                                                        Mobile: <input type="text" id="u_mobile_id" maxlength="20" autocomplete="off" name="mobile" style="margin-left: 28px;"><br><br>
                                                     </div>
                                                     <div class="form2">
-                                                        Last Name: <input type="text" id="u_lastname_id" autocomplete="off" name="lastName" style="margin-left: 49px;"><br>
-                                                        Location: <input type="text" id="u_location_id" id="login_id" autocomplete="off" name="location" style="margin-left: 63px;"><br>
-                                                        Postal Code: <input type="text" id="u_postalCode_id" autocomplete="off" name="postalCode" style="margin-left: 41px;"><br>
-                                                        Birth Date: <input type="date" id="u_birthDate_id" autocomplete="off" name="date" style="margin-left: 51px;"><br>
-                                                        Phone: <input type="text" id="u_phone_id" autocomplete="off" name="phone" style="margin-left: 79px;"><br><br>
+                                                        Last Name: <input type="text" id="u_lastname_id" maxlength="20" autocomplete="off" name="lastName" style="margin-left: 49px;"><br>
+                                                        Location: <input type="text" id="u_location_id" maxlength="20" autocomplete="off" name="location" style="margin-left: 63px;"><br>
+                                                        Postal Code: <input type="text" id="u_postalCode_id" maxlength="20" autocomplete="off" name="postalCode" style="margin-left: 41px;"><br>
+                                                        Birth Date: <input type="date" id="u_birthDate_id" maxlength="20" autocomplete="off" name="date" style="margin-left: 51px;"><br>
+                                                        Phone: <input type="text" id="u_phone_id" maxlength="20" autocomplete="off" name="phone" style="margin-left: 79px;"><br><br>
                                                     </div>
                                                     <div class="form3">
-                                                        Username: <input type="text" id="u_username_id" autocomplete="off" name="username" style="margin-left: 8px;">
-                                                        Email: <input type="email" id="u_email_id" autocomplete="off" name="email" style="margin-left: 82px;"><br>
-                                                        Password: <input type="password" id="u_password_id" autocomplete="off" name="Password" style="margin-left: 13px;">
-                                                        Confirm Password: <input type="password" id="u_confirmPassword_id" autocomplete="off" name="Password" style="margin-left: 0px;"><br><br>
+                                                        Username: <input type="text" id="u_username_id" maxlength="20" autocomplete="off" name="username" style="margin-left: 8px;">
+                                                        Email: <input type="email" id="u_email_id" maxlength="20" autocomplete="off" name="email" style="margin-left: 82px;"><br>
+                                                        Password: <input type="password" id="u_password_id" maxlength="20" autocomplete="off" name="Password" style="margin-left: 13px;">
+                                                        Confirm Password: <input type="password" id="u_confirmPassword_id" maxlength="20" autocomplete="off" name="Password" style="margin-left: 0px;"><br><br>
                                                         <input type="button" onclick="validate()" value="Register" class="login-button"> 
                                                     </div>                              
                                                  </form>
@@ -107,25 +107,25 @@
                                                     Register Hotel
                                                 </div>
                                                 <div class="loginForm">
-                                                 <form name="login" action="register2.php" method="post" >
+                                                 <form name="login" action="h_register.php" method="post" >
                                                     <div class="form1">
-                                                        Hotel Name: <input type="text" id="h_hotelName_id" name="hotelName"><br>
-                                                        Contry: <input type="text" id="h_contry_id" name="h_country" style="margin-left: 36px;"><br>
-                                                        City: <input type="text" id="h_city_id" name="h_city" style="margin-left: 54px;"><br>
-                                                        Postal Code: <input type="text" id="h_postalCode_id" name="h_postalCode">
+                                                        Hotel Name: <input type="text" id="h_hotelName_id" maxlength="20" autocomplete="off" name="hotelName"><br>
+                                                        Contry: <input type="text" id="h_contry_id" maxlength="20" autocomplete="off" name="h_country" style="margin-left: 36px;"><br>
+                                                        City: <input type="text" id="h_city_id" maxlength="20" autocomplete="off" name="h_city" style="margin-left: 54px;"><br>
+                                                        Postal Code: <input type="text" id="h_postalCode_id" maxlength="20" autocomplete="off" name="h_postalCode">
                                                     </div>
                                                     <div class="form2">
-                                                        Adress: <input type="text" id="h_address_id" name="h_address" style="margin-left: 77px;"><br>
-                                                        Mobile: <input type="text" id="h_mobile_id" name="h_mobile" style="margin-left: 85px;"><br>
-                                                        Phone: <input type="text" id="h_phone_id" name="h_phone" style="margin-left: 83px;"><br>
-                                                        Fax: <input type="text" id="h_fax_id" name="h_fax" style="margin-left: 100px;"><br><br>
+                                                        Adress: <input type="text" id="h_address_id" maxlength="20" autocomplete="off" name="h_address" style="margin-left: 77px;"><br>
+                                                        Mobile: <input type="text" id="h_mobile_id" maxlength="20" autocomplete="off" name="h_mobile" style="margin-left: 85px;"><br>
+                                                        Phone: <input type="text" id="h_phone_id" maxlength="20" autocomplete="off" name="h_phone" style="margin-left: 83px;"><br>
+                                                        Fax: <input type="text" id="h_fax_id" maxlength="20" autocomplete="off" name="h_fax" style="margin-left: 100px;"><br><br>
                                                     </div>
                                                     <div class="form3">
-                                                        Username: <input type="text" id="h_username_id" name="h_username" style="margin-left: 15px;">
-                                                        Email: <input type="email" id="h_email_id" name="h_email" style="margin-left: 85px;"><br>
-                                                        Password: <input type="password" id="h_password_id" name="h_password" style="margin-left: 20px;">
-                                                        Confirm Password: <input type="password" id="h_confirmPassword_id" name="h_confirmPassword"><br>
-                                                        <input type="button" onclick="validate()" value="Register" class="login-button" style="margin-top: 66px;">  
+                                                        Username: <input type="text" id="h_username_id" maxlength="20" autocomplete="off" name="h_username" style="margin-left: 15px;">
+                                                        Email: <input type="email" id="h_email_id" maxlength="20" autocomplete="off" name="h_email" style="margin-left: 85px;"><br>
+                                                        Password: <input type="password" id="h_password_id" maxlength="20" autocomplete="off" name="h_password" style="margin-left: 20px;">
+                                                        Confirm Password: <input type="password" id="h_confirmPassword_id" maxlength="20" autocomplete="off" name="h_confirmPassword"><br>
+                                                        <input type="submit" onclick="validate()" value="Register" class="login-button" style="margin-top: 66px;">  
                                                     </div>
                                                  </form>
                                                 </div>
@@ -198,7 +198,9 @@
                     </div>
                     <div class="hotel-description">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-                    </div></div></div>
+                    </div>
+					</div>
+					</div>
             
         </article>
     <!--<aside>aside</aside>-->
