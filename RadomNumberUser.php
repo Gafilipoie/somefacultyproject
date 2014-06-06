@@ -13,8 +13,8 @@ mysql_connect("$host", "$db_username", "$db_password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
 
 
-
-$ok=0;
+function getRandomID(){
+	$ok=0;
 while($ok==0){
 	
 	$randomNum=rand(1000,9999);
@@ -23,9 +23,8 @@ while($ok==0){
 	
 		if(mysql_fetch_array( $result)==NULL)
 			{
-			echo $randomNum;
 			$ok=1;
 			}
 }
-			
+}		
 ?>

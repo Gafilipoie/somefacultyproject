@@ -14,6 +14,7 @@ mysql_select_db("$db_name")or die("cannot select DB");
 
 
 
+function getRandomID(){
 $ok=0;
 while($ok==0){
 	
@@ -27,5 +28,6 @@ while($ok==0){
 			$ok=1;
 			}
 }
-			
+   return $randomNum;
+}			
 ?>
