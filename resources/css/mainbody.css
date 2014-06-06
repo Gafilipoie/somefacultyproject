@@ -41,7 +41,7 @@
 
 
 #main > article > div.heading {
-  max-width: 1130px;
+
   position: relative;
   margin: 0 auto 38px;
   padding: 38px 0 20px;
@@ -327,12 +327,81 @@ line-height:1;
 
 
 
+#main > article.contact-us {
+  background-color: #fff;
+  width: 76%;
+  padding: 10px;
+  margin: 4px;
+  margin-top: 20px;
+    -webkit-flex: 3 1 60%;
+          flex: 3 1 60%;
+  -webkit-order: 2;
+          order: 2;
+          -webkit-box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
+-moz-box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
+box-shadow: 0px 6px 1.5px 0px rgba(59,59,59,1);
+}
 
+#main > article.contact-us > div.heading {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0px;
+}
 
+#main > article.contact-us > div.heading > hr {
+  width: 92.5%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-left: 34px;
+  margin-right: 1px;
+  padding: 0;
+  box-shadow: 0px 0px 0px #888888;
+}
 
+#main > article > div.contact-form {
+  width: 96%;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+}
 
+#main > article > div.contact-form > div.contact-info {
+  float: left;
+  margin-left: 100px;
+}
 
+#main > article > div.contact-form > div.contact-info > h4 {
+  margin: 15px 0 5px;
+  padding: 0px;
+  font-size: 22px;
+  color: #727272;
+  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 
+#main > article > div.contact-form > div.contact-info > p {
+  margin: 0 0 10px;
+  padding: 0px;
+  text-align: left;
+  font-size: 16px;
+  color: #5a5a5a;
+  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 
+#main > article > div.contact-form > div.contact-info > p > a {
+  text-decoration: none;
+  color: #008CD2;
+  cursor: auto;
+  font-weight: normal;
+}
 
+#main > article > div.contact-form > div.map {
+  float: right;
+  margin-right: 100px;
+}
 

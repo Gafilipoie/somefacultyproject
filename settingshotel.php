@@ -149,7 +149,7 @@
                 <div class="subtitle">Personal details</div>
                 <div class="edit"><a href="#" class="edit">Edit</a></div>
                 <hr>
-                <div class="info">Name</div>
+                <div class="info">Hotel Name</div>
                 <div class="edit">To be edited</div>
                 <hr>
                 <div class="info">Username</div>
@@ -167,16 +167,13 @@
                 <div class="info">Postal Code</div>
                 <div class="edit">To be edited</div>
                 <hr>
-                <div class="info">CNP</div>
-                <div class="edit">To be edited</div>
-                <hr>
-                <div class="info">Birth Date</div>
-                <div class="edit">To be edited</div>
-                <hr>
                 <div class="info">Mobile</div>
                 <div class="edit">To be edited</div>
                 <hr>
                 <div class="info">Phone</div>
+                <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Fax</div>
                 <div class="edit">To be edited</div>
                 <hr>
                 <div class="info">Email Adress</div>

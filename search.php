@@ -168,7 +168,7 @@
                 <div class="telefon">
                     
                     <span><img src="resources/imagini/icon_phone.png">0232 201 XXX</span><br>
-                    <a href="mailto:nelo@gmail.com" style="float: right;">neLo@gmail.com</a>
+                    <a href="mailto:the.nelo.web@gmail.com" style="float: right;">the.nelo.web@gmail.com</a>
                     
                 </div>
                 
