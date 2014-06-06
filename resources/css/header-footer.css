@@ -14,51 +14,7 @@ body > div.cover {
   background-size: cover;
 }
 
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop {
-  float: left;
-}
 
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu {
-padding:0px;
-margin:0px;
-list-style-type:none;
-height:60px;
-display: inline-block;
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li { float:left; }
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li > a {
-padding:0px 5px;
-display:block;
-color:#476898;
-text-decoration:none;
-font-size: 16px;
-text-decoration: underline;
-}
-/* Submenu */
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li > ul {
-position:absolute;
-left:-9999px;
-top:-9999px;
-list-style-type:none;
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover { 
-  position:relative; 
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul {
-left:0px;
-top:20px;
-padding:0px;
-font-size: 16px;
-text-decoration: none;
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul > li > a {
-padding:0px;
-display:block;
-width:85px;
-text-indent:15px;
-text-decoration: none;
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.drop > ul.drop_menu > li:hover > ul > li > a:hover { color: #478acb; }
 
 header {
   z-index: 1;
@@ -123,12 +79,6 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left {
   width: 300px;
 }
 
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll {
-  display: inline;
-  float: left;
-   font-size: 16px;
-}
-
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state, a{
   color: rgba(255,255,255,.8);
   color: #476898;
@@ -137,12 +87,77 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
   font-weight: bold;
 }
 
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > a.login {
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  a.login {
   margin-left: 10px;
 }
-header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > a.login:hover {
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  a.login:hover {
   color: #478acb;
 }
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll {
+  display: inline-block;
+  float: left;
+   font-size: 16px;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe {
+  width: 300px;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe > p {
+  margin: 0px;
+  margin-left: 3px;
+  padding: 0px;
+  float: left;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe > a {
+  float: left;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe > ul.drop_menu {
+padding:0px;
+margin:0px;
+margin-left: -2px;
+list-style-type:none;
+height:65px;
+float: left;
+word-spacing: normal;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li { float:left; }
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li > a {
+padding:0px 5px;
+display:block;
+color:#476898;
+text-decoration:none;
+font-size: 16px;
+text-decoration: underline;
+}
+/* Submenu */
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li > ul {
+position:absolute;
+left:-9999px;
+top:-9999px;
+list-style-type:none;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover { 
+  position:relative; 
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover > ul {
+left:0px;
+top:20px;
+padding:0px;
+font-size: 16px;
+text-decoration: none;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover > ul > li > a {
+padding:0px;
+display:block;
+width:85px;
+text-indent:15px;
+text-decoration: none;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover > ul > li > a:hover { color: #478acb; text-decoration: underline;}
 
 header > div.header-container > nav.user-nav > div.container > div.panel-right {
   padding: 0px;
@@ -381,15 +396,6 @@ header > div.header-container > nav.user-nav > div.container > div.panel-right >
 
 
 
-<a href="#" class="myButton">light grey</a>
 
-.myButton {
-  
-}
-.myButton:hover {
-  
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
+
+

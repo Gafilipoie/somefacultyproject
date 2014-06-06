@@ -16,20 +16,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
     <title>neLo - Online Lodging -</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="resources/js/script.js"></script>
-	<script type="text/javascript" src="valid.js"></script>
     <link rel="shortcut icon" href="resources/imagini/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="resources/css/modalDialog.css">
     <link rel="stylesheet" type="text/css" href="resources/css/mainbody.css">
     <link rel="stylesheet" type="text/css" href="resources/css/header-footer.css">
-
-
 </head>
 
- <body>
+<body>
  	<header class="nav-down">
         <div class="header-container">
  		<nav class="user-nav">
@@ -37,115 +34,114 @@
  				<div class="panel-left">
  					<div class="user-logo-state">
                         <div class="loginAll">
-     						Have an account?
-     						<a href="#modalLogin" class="login" role="button">Login</a>
-                            <div id="modalLogin" class="modalLogin">
-                                <div>
-                                    <a href="#closeLogin" title="Close" class="closeLogin">X</a>
-                                    <div class="loginTitle">
-                                        Login to neLo
-                                    </div>
-                                    <div class="loginForm">
-    								 <form name="login" action="firstLogin.php" method="post" >
-    								 Username: <input type="text" id="login_id" name="username"><br>
-    								 Password: <input type="password" id="password_id" name="password" style="margin-left: 7px;"><br>
-    								 <input type="submit" value="Login" class="login-button">
-    								 </form>
-                                    </div>
-                                    <hr>
-                                    <div class="loginForgot">
-                                        <a href="#">Forgot your password?</a>
+                            <div class="containe">
+     						    <p>Have an account?</p>
+     						    <a href="#modalLogin" class="login" role="button">Login</a>
+                                <div id="modalLogin" class="modalLogin">
+                                    <div>
+                                        <a href="#closeLogin" title="Close" class="closeLogin">X</a>
+                                        <div class="loginTitle">
+                                            Login to neLo
+                                        </div>
+                                        <div class="loginForm">
+    								        <form name="login" action="firstLogin.php" method="post" >
+    								            Username: <input type="text" name="username"><br>
+    								            Password: <input type="password" name="password" style="margin-left: 7px;"><br>
+    								            <input type="submit" value="Login" class="login-button">
+    								        </form>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="loginForgot">
+                                            <a href="#">Forgot your password?</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
- 						|
-                        </div>
-                        <div class="drop">
-                            <ul class="drop_menu">
-                                <li><a href='#'>Sign Up</a>
-                                    <ul>
-                                        <li><a href='#modalSignupUser' class="register" role="button">User</a></li>
-                                        <div id="modalSignupUser" class="modalSignupUser">
-                                            <div>
-                                                <a href="#closeSignupUser" title="Close" class="closeSignupUser">X</a>
-                                                <div class="loginTitle">
-                                                    Register User
-                                                </div>
-                                                <div class="loginForm">
-                                                 <form name="login" action="register1.php" method="post" >
-                                                    <div class="form1">
-                                                        First Name: <input type="text"  id="u_firstName_id" autocomplete="off" name="firstName" ><br>
-                                                        Adress: <input type="text" id="u_address_id" autocomplete="off" name="address" style="margin-left: 28px;"><br>
-                                                        City: <input type="text" id="u_city_id" autocomplete="off" name="city" style="margin-left: 48px;"><br>
-                                                        CNP: <input type="text"  id="u_cnp_id" autocomplete="off" name="CNP" style="margin-left: 44px;"><br>
-                                                        Mobile: <input type="text" id="u_mobile_id" autocomplete="off" name="mobile" style="margin-left: 28px;"><br><br>
+ 						        <p>|</p>
+                                <ul class="drop_menu">
+                                    <li><a href='#'>Sign Up</a>
+                                        <ul>
+                                            <li><a href='#modalSignupUser' class="register" role="button">User</a></li>
+                                            <div id="modalSignupUser" class="modalSignupUser">
+                                                <div>
+                                                    <a href="#closeSignupUser" title="Close" class="closeSignupUser">X</a>
+                                                    <div class="loginTitle">
+                                                        Register User
                                                     </div>
-                                                    <div class="form2">
-                                                        Last Name: <input type="text" id="u_lastname_id" autocomplete="off" name="lastName" style="margin-left: 49px;"><br>
-                                                        Location: <input type="text" id="u_location_id" id="login_id" autocomplete="off" name="location" style="margin-left: 63px;"><br>
-                                                        Postal Code: <input type="text" id="u_postalCode_id" autocomplete="off" name="postalCode" style="margin-left: 41px;"><br>
-                                                        Birth Date: <input type="date" id="u_birthDate_id" autocomplete="off" name="date" style="margin-left: 51px;"><br>
-                                                        Phone: <input type="text" id="u_phone_id" autocomplete="off" name="phone" style="margin-left: 79px;"><br><br>
-                                                    </div>
-                                                    <div class="form3">
-                                                        Username: <input type="text" id="u_username_id" autocomplete="off" name="username" style="margin-left: 8px;">
-                                                        Email: <input type="email" id="u_email_id" autocomplete="off" name="email" style="margin-left: 82px;"><br>
-                                                        Password: <input type="password" id="u_password_id" autocomplete="off" name="Password" style="margin-left: 13px;">
-                                                        Confirm Password: <input type="password" id="u_confirmPassword_id" autocomplete="off" name="Password" style="margin-left: 0px;"><br><br>
-                                                        <input type="button" onclick="validate()" value="Register" class="login-button"> 
-                                                    </div>                              
-                                                 </form>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                    <div class="loginForm">
+                                                        <form name="login" action="register1.php" method="post" >
+                                                            <div class="form1">
+                                                                First Name: <input type="text" name="firstName" style="float: right; margin-left: 230px;"><hr><br>
+                                                                Last Name: <input type="text" name="lastName" style="float: right;"><hr><br>
+                                                                Adress: <input type="text" name="address" style="float: right;"><hr><br>
+                                                                Location: <input type="text" name="location" style="float: right;"><hr><br>
+                                                                City: <input type="text" name="city" style="float: right;"><hr><br>
+                                                                Postal Code: <input type="text" name="postalCode" style="float: right;"><hr><br>
+                                                                CNP: <input type="text" name="CNP" style="float: right;"><hr><br>
+                                                                Birth Date: <input type="date" name="date" style="float: right;"><hr><br>
+                                                                Mobile: <input type="text" name="mobile" style="float: right;"><hr><br>
+                                                                Phone: <input type="text" name="phone" style="float: right;"><hr><br><br>
 
-                                        <li><a href='#modalSignupHotel' class="register" role="button">Hotel</a></li>
-                                        <div id="modalSignupHotel" class="modalSignupHotel">
-                                            <div>
-                                                <a href="#closeSignupHotel" title="Close" class="closeSignupHotel">X</a>
-                                                <div class="loginTitle">
-                                                    Register Hotel
-                                                </div>
-                                                <div class="loginForm">
-                                                 <form name="login" action="register2.php" method="post" >
-                                                    <div class="form1">
-                                                        Hotel Name: <input type="text" id="h_hotelName_id" name="hotelName"><br>
-                                                        Contry: <input type="text" id="h_contry_id" name="h_country" style="margin-left: 36px;"><br>
-                                                        City: <input type="text" id="h_city_id" name="h_city" style="margin-left: 54px;"><br>
-                                                        Postal Code: <input type="text" id="h_postalCode_id" name="h_postalCode">
+                                                                Username: <input type="text" name="username" style="float: right;"><hr><br>
+                                                                Email: <input type="email" name="email" style="float: right;"><hr><br>
+                                                                Password: <input type="password" name="Password" style="float: right;"><hr><br>
+                                                                Confirm Password: <input type="password" name="Password" style="float: right;"><hr><br>
+                                                                <input type="submit" value="Register" class="login-button" style="float: right;"> 
+                                                            </div>                          
+                                                        </form>
                                                     </div>
-                                                    <div class="form2">
-                                                        Adress: <input type="text" id="h_address_id" name="h_address" style="margin-left: 77px;"><br>
-                                                        Mobile: <input type="text" id="h_mobile_id" name="h_mobile" style="margin-left: 85px;"><br>
-                                                        Phone: <input type="text" id="h_phone_id" name="h_phone" style="margin-left: 83px;"><br>
-                                                        Fax: <input type="text" id="h_fax_id" name="h_fax" style="margin-left: 100px;"><br><br>
-                                                    </div>
-                                                    <div class="form3">
-                                                        Username: <input type="text" id="h_username_id" name="h_username" style="margin-left: 15px;">
-                                                        Email: <input type="email" id="h_email_id" name="h_email" style="margin-left: 85px;"><br>
-                                                        Password: <input type="password" id="h_password_id" name="h_password" style="margin-left: 20px;">
-                                                        Confirm Password: <input type="password" id="h_confirmPassword_id" name="h_confirmPassword"><br>
-                                                        <input type="button" onclick="h_validate()" value="Register" class="login-button" style="margin-top: 66px;">  
-                                                    </div>
-                                                 </form>
+                                                    <div class="hr"></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </ul>
-                                </li>
-                            </ul>
+
+                                            <li><a href='#modalSignupHotel' class="register" role="button">Hotel</a></li>
+                                            <div id="modalSignupHotel" class="modalSignupHotel">
+                                                <div>
+                                                    <a href="#closeSignupHotel" title="Close" class="closeSignupHotel">X</a>
+                                                    <div class="loginTitle">
+                                                        Register Hotel
+                                                    </div>
+                                                    <div class="loginForm">
+                                                        <form name="login" action="register2.php" method="post" >
+                                                            <div class="form1">
+                                                                Hotel Name: <input type="text" name="hotelName" style="float: right; margin-left: 230px;"><hr><br>
+                                                                Adress: <input type="text" name="h_address" style="float: right;"><hr><br>
+                                                                Contry: <input type="text" name="h_country" style="float: right;"><hr><br>
+                                                                City: <input type="text" name="h_city" style="float: right;"><hr><br>
+                                                                Postal Code: <input type="text" name="h_postalCode" style="float: right;"><hr><br>
+                                                                Mobil: <input type="text" name="h_mobile" style="float: right;"><hr><br>
+                                                                Phone: <input type="text" name="h_phone" style="float: right;"><hr><br>
+                                                                Fax: <input type="text" name="h_fax" style="float: right;"><hr><br><br>
+                                                                Username: <input type="text" name="h_username" style="float: right;"><hr><br>
+                                                                Email: <input type="email" name="h_email" style="float: right;"><hr><br>
+                                                                Password: <input type="password" name="h_password" style="float: right;"><hr><br>
+                                                                Confirm Password: <input type="password" name="h_confirmPassword" style="float: right;"><hr><br>
+                                                                <input type="submit" value="Register" class="login-button" style="float: right;">  
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="hr"></div>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
- 				<div class="panel-right"><a href="#" class="account-settings">Marius</a></div></div>
-         </nav>
+ 				<div class="panel-right">
+                    <a href="#" class="account-settings">Marius</a>
+                </div>
+            </div>
+        </nav>
 
  		<nav class="menu-nav">
  			<div class="container">
  				<div class="panel-left">
                     <a href="index.php">
-                        <img src="resources/css/images/logo.png">
-                        </img></a></div>
+                        <img src="resources/css/images/logo.png"></img>
+                    </a>
+                </div>
 
  				<div class="panel-right">
                     <a href="index.php" title="Home" class="Button">Home</a>

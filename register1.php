@@ -5,21 +5,6 @@ $db_password="sjOqapXt5L"; // Mysql password
 $db_name="NELO"; // Database name 
 $tbl_name="User_Login"; // users name  
 $tblh_name="Hotels";// hotels table
-function getRandomID(){
-	$ok=0;
-while($ok==0){
-	
-	$randomNum=rand(1000,9999);
-	$query="SELECT ID_User FROM $tbl_name WHERE ID_User=$randomNum;";
-	$result = mysql_query($query);
-	
-		if(mysql_fetch_array( $result)==NULL)
-			{
-			$ok=1;
-			}
-}
-    return $randomNum;
-}
 session_start();
 
 $firstName = $_POST['firstName'];
@@ -37,7 +22,7 @@ $phone = $_POST['phone'];
 $password = $_POST['password'];
 
 $firstName = stripslashes($firstName);
-//$firstName = mysqli_real_escape_string($firstName);
+//$firstName = mysql_real_escape_string($firstName);
 $address = stripslashes($address);
 //$address = mysql_real_escape_string($address);
 $city = stripslashes($city);
@@ -78,13 +63,12 @@ echo  $_POST['postalCode'];
 echo  $_POST['date'];
 echo  $_POST['phone'];
 echo  $_POST['password'];
-echo  $password; 
+
 // Connect to server and select databse.
 mysql_connect("$host", "$db_username", "$db_password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("cannot select DB");
-$rn = getRandomID();
-echo $rn;	
-$insstm="INSERT INTO $tbl_name VALUES ('$rn','$username', '$password',2,1,'$firstName','$lastName','$mobile','$phone','$email','$cnp','$dateOfBirth','$country','$city','$address','$postalCode',0);";
+	
+$insstm="INSERT INTO $tbl_name VALUES (8383,$userName,$password,2,1,$firstName,$lastName,$mobile,$phone,$email,$cnp,$dateOfBirth,$country,$city,$address,$postalCode,0);";
 $resu=mysql_query($insstm);
 echo $resu;
 ?>
