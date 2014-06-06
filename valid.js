@@ -47,4 +47,47 @@ function validate(){
  u_confirmPassword_id; 
  console.log(x);
  };
+ 
+ function h_validate(){
+ var h_username_id,
+ h_email_id,
+ h_password_id,
+ h_confirmPassword_id,
+ h_hotelName_id,
+ h_contry_id,
+ h_city_id,
+ h_postalCode_id,
+ h_address_id,
+ h_mobile_id,
+ h_phone_id,
+ h_fax_id;
+ 
+ h_username_id = document.getElementById('h_username_id').value;
+ h_email_id = document.getElementById('h_email_id').value;
+ h_password_id = document.getElementById('h_password_id').value;
+ h_confirmPassword_id = document.getElementById('h_confirmPassword_id').value;
+ h_hotelName_id = document.getElementById('h_hotelName_id').value;
+ h_contry_id = document.getElementById('h_contry_id').value;
+ h_city_id = document.getElementById('h_city_id').value;
+ h_postalCode_id = document.getElementById('h_postalCode_id').value;
+ h_address_id = document.getElementById('h_address_id').value;
+ h_mobile_id = document.getElementById('h_mobile_id').value;
+ h_phone_id = document.getElementById('h_phone_id').value;
+ h_fax_id = document.getElementById('h_fax_id').value;
+
+
+ x= h_username_id+' '+
+ h_email_id+' '+
+ h_password_id+' '+
+ h_confirmPassword_id+' '+
+ h_hotelName_id+' '+
+ h_contry_id+' '+
+ h_city_id+' '+
+ h_postalCode_id+' '+
+ h_address_id+' '+
+ h_mobile_id+' '+
+ h_phone_id+' '+
+ h_fax_id;
+ console.log(x);
+ };
 	
