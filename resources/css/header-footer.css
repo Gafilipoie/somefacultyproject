@@ -163,6 +163,7 @@ header > div.header-container > nav.user-nav > div.container > div.panel-right {
   padding: 0px;
   margin: 1px 0 0;
   float: right;
+  white-space: nowrap;
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-left {
@@ -178,7 +179,7 @@ header > div.header-container > nav.menu-nav > div.container > div.panel-right {
   position: relative;
   float: right;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-right > ul.navigation-menu {

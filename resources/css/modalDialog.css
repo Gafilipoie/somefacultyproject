@@ -379,6 +379,7 @@ div.form1 > hr{
 	color: #D63333;
 	font-weight: normal;
 	text-align: center;
+	white-space: normal;
 }
 .modalSignupUser > div > div.hr {
 	float: left;
@@ -391,7 +392,8 @@ div.form1 > hr{
 	color: #D63333;
 	font-weight: normal;
 	text-align: center;
-}
+	white-space: normal;
+	}
 
 .modalSignupHotel > div > div.hr {
 	float: left;
@@ -404,6 +406,7 @@ div.form1 > hr{
 	color: #D63333;
 	font-weight: normal;
 	text-align: center;
+	white-space: normal;
 }
 
 .closeDetails {

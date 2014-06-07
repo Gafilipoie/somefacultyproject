@@ -329,8 +329,7 @@ line-height:1;
 
 #main > article.background {
   background-color: #fff;
-  width: 76%;
-  padding: 10px;
+  padding: 1px;
   margin: 4px;
   margin-top: 20px;
     -webkit-flex: 3 1 60%;
@@ -340,7 +339,6 @@ line-height:1;
   -moz-box-shadow: 0px 1px 5px 0px #858585;
 -webkit-box-shadow: 0px 1px 5px 0px #858585;
 box-shadow: 0px 1px 5px 0px #858585;
-
   -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
       border-radius: 5px;
@@ -372,15 +370,15 @@ box-shadow: 0px 1px 5px 0px #858585;
 }
 
 #main > article.background > div.container {
-  width: 96%;
+
   float: left;
-  margin: 10px;
-  padding: 10px;
+  margin: 2px;
+  padding: 2px;
 }
 
 #main > article.background > div.container > div.contact-info {
   float: left;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 #main > article.background > div.container > div.contact-info > h4 {
@@ -413,7 +411,8 @@ box-shadow: 0px 1px 5px 0px #858585;
 
 #main > article.background > div.container > div.map {
   float: right;
-  margin-right: 100px;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
 #main > article.background > div.container > div.partners-logo {
@@ -428,7 +427,7 @@ box-shadow: 0px 1px 5px 0px #858585;
 
 #main > article.background > div.container > div.about-info {
   float: left;
-  margin-left: 16px;
+  margin-left: 30px;
   vertical-align: middle;
 }
 
@@ -446,7 +445,8 @@ box-shadow: 0px 1px 5px 0px #858585;
 
 #main > article.background > div.container > div.about-picture {
   float: right;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .form {
@@ -456,4 +456,175 @@ box-shadow: 0px 1px 5px 0px #858585;
 .edit_checkbox {
   float:right;
   margin-left: 40px;
+}
+
+#main > article.background > div.container > div.search-box {
+  float: left;
+  margin-left: 16px;
+  vertical-align: middle;
+  position: relative;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  display: block;
+}
+
+#main > article.background > div.container > div.search-box > form {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  color: #373737;
+  font-family: 'Bree Serif';
+    font-weight: bold;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 32px;
+  text-align: left;
+}
+
+#main > article.background > div.container > div.search-box > form > div.search {
+  float: left;
+  margin: 10px;
+  position: relative;
+}
+
+#main > article.background > div.container > div.search-result {
+  float: left;
+  margin-top: 20px;
+  margin-left: 0px;
+  padding: 2px;
+  padding-left: 25px;
+  position: relative;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#main > article.background > div.container > div.search-result > div.hotel-block {
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  width: 30%;
+  padding-right: 4px;
+  padding-left: 4px;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-body {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: #f9f8f4;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer {
+  display: inherit;
+  overflow: auto;
+  position: relative;
+  padding-top: 3px;
+  background: #f9f8f4;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail {
+  float: left;
+  display: block;
+  margin-left: 10px;
+   position: relative;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-type {
+  margin-left: 25px;
+  float: left;
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-name {
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-location {
+  float: left;
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.rezervation {
+  float: right;
+  width: 104px;
+  margin-top: 13px;
+  
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-description {
+  float: left;
+
+  margin-top: 5px;
+  margin-bottom: 3px;
+  width: 96%;
+  min-height: 150px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+}
+
+#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-description > p {
+font-weight:normal;
+color:#827678;
+letter-spacing:0pt;
+word-spacing:0pt;
+font-size:12px;
+text-align:left;
+font-family:lucida sans unicode, lucida grande, sans-serif;
+line-height:1;
 }
