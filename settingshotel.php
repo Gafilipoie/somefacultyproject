@@ -149,7 +149,7 @@
 <!-- header -->
     <br><br>
     <div id='main'>
-        <article>
+        <article class="background">
             <div class="settings-heading">
                 <div class="title">Settings</div>
             </div>
@@ -189,6 +189,28 @@
                 <hr>
                 <div class="info">Password</div>
                 <div class="edit">To be edited</div>
+                <hr>
+                <div class="info">Facilities</div>
+                <form name="facilities" action="" method="" class="form">
+                        <div class="edit_checkbox">
+                            <input type="checkbox" name="piscina"> Piscina
+                            <input type="checkbox" name="Parcare" style="margin-left: 38px;"> Parcare
+                            <input type="checkbox" name="lift" style="margin-left: 30px;"> Lift
+                            <input type="checkbox" name="restaurant" style="margin-left: 63px;"> Restaurant<br>
+                            <input type="checkbox" name="plaja_privata"> Plaja Privata
+                            <input type="checkbox" name="spa"> Spa
+                            <input type="checkbox" name="sala_fitness" style="margin-left: 55px;"> Sala Fitness
+                            <input type="checkbox" name="sala_forta"> Sala Forta<br>
+                            <input type="checkbox" name="jacuzzi"> Jacuzzi
+                            <input type="checkbox" name="internet" style="margin-left: 39px;"> Internet
+                            <input type="checkbox" name="bar" style="margin-left: 32px;"> Bar
+                            <input type="checkbox" name="sauna" style="margin-left: 60px;"> Sauna<br>
+                            <input type="checkbox" name="foisor"> Foisor
+                            <input type="checkbox" name="teren_sport" style="margin-left: 43px;"> Teren Sport
+                            <input type="checkbox" name="terasa"> Terasa
+                            <input type="checkbox" name="gratar" style="margin-left: 37px;"> Gratar
+                        </div>
+                </form>    
                 <hr>
                 <div class="edit"><a href="#" class="edit">Save</a></div>
             </div>
