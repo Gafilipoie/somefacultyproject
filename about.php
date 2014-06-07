@@ -34,7 +34,7 @@
                                                 <input type="submit" value="Login" class="login-button">
                                             </form>
                                         </div>
-                                        <div class="hr">Wrong Username or Password!</div>
+                                        <div class="hr"></div>
                                         <div class="loginForgot">
                                             <a href="#">Forgot your password?</a>
                                         </div>
@@ -73,7 +73,7 @@
                                                             </div>                          
                                                         </form>
                                                     </div>
-                                                    <div class="hr">Wrong Username or Password!</div>
+                                                    <div class="hr"></div>
                                                 </div>
                                             </div>
 
@@ -103,7 +103,7 @@
                                                             </div>
                                                         </form>
                                                     </div>
-                                                    <div class="hr">Wrong Username or Password!</div>
+                                                    <div class="hr"></div>
                                                 </div>
                                             </div>
                                         </ul>
@@ -114,16 +114,7 @@
                     </div>
                 </div>
                 <div class="panel-right">
-                    <ul class="drop_menu">
-                        <li><a href="#" class="account-settings">Marius</a>
-                            <ul>
-                                <li><div>Gaby Marius</div></li>
-                                <li><hr></li>
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="#">Sign Out</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="#" class="account-settings">Marius</a>
                 </div>
             </div>
         </nav>
