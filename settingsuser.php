@@ -115,16 +115,7 @@
                     </div>
                 </div>
                 <div class="panel-right">
-                    <ul class="drop_menu">
-                        <li><a href="#" class="account-settings">Marius</a>
-                            <ul>
-                                <li><div>Gaby Marius</div></li>
-                                <li><hr></li>
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="#">Sign Out</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="#" class="account-settings">Marius</a>
                 </div>
             </div>
         </nav>
@@ -153,12 +144,15 @@
             <div class="settings-heading">
                 <div class="title">Settings</div>
             </div>
+            
             <div class="settings-main">
                 <div class="subtitle">Personal details</div>
                 <div class="edit"><a href="#" class="edit">Edit</a></div>
+                
                 <hr>
                 <div class="info">Name</div>
                 <div class="edit">To be edited</div>
+                <input type="text" name="h_confirmPassword" style="float: right;">
                 <hr>
                 <div class="info">Username</div>
                 <div class="edit">To be edited</div>
@@ -195,6 +189,7 @@
                 <hr>
                 <div class="edit"><a href="#" class="edit">Save</a></div>
             </div>
+           
         </article>
     <!--<aside>aside</aside>-->
     </div>
