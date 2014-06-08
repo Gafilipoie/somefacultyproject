@@ -375,10 +375,10 @@ div.form1 > hr{
 	margin-left: 8px;
 	margin-right: 1px;
 	padding: 0;
-	box-shadow: 2px 1px 1px #888888;
 	color: #D63333;
 	font-weight: normal;
 	text-align: center;
+	white-space: normal;
 }
 .modalSignupUser > div > div.hr {
 	float: left;
@@ -387,11 +387,11 @@ div.form1 > hr{
 	margin-left: 8px;
 	margin-right: 1px;
 	padding: 0;
-	box-shadow: 2px 1px 1px #888888;
 	color: #D63333;
 	font-weight: normal;
 	text-align: center;
-}
+	white-space: normal;
+	}
 
 .modalSignupHotel > div > div.hr {
 	float: left;
@@ -400,10 +400,10 @@ div.form1 > hr{
 	margin-left: 8px;
 	margin-right: 1px;
 	padding: 0;
-	box-shadow: 2px 1px 1px #888888;
 	color: #D63333;
 	font-weight: normal;
 	text-align: center;
+	white-space: normal;
 }
 
 .closeDetails {

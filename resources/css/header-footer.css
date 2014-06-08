@@ -97,7 +97,7 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll {
   display: inline-block;
   float: left;
-   font-size: 16px;
+  font-size: 16px;
 }
 
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe {
@@ -116,46 +116,46 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
 }
 
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe > ul.drop_menu {
-padding:0px;
-margin:0px;
-margin-left: -2px;
-list-style-type:none;
-height:65px;
-float: left;
-word-spacing: normal;
+  padding:0px;
+  margin:0px;
+  margin-left: -2px;
+  list-style-type:none;
+  height:65px;
+  float: left;
+  word-spacing: normal;
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li { float:left; }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li > a {
-padding:0px 5px;
-display:block;
-color:#476898;
-text-decoration:none;
-font-size: 16px;
-text-decoration: underline;
+  padding:0px 5px;
+  display:block;
+  color:#476898;
+  text-decoration:none;
+  font-size: 16px;
+  text-decoration: underline;
 }
 /* Submenu */
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li > ul {
-position:absolute;
-left:-9999px;
-top:-9999px;
-list-style-type:none;
+  position:absolute;
+  left:-9999px;
+  top:-9999px;
+  list-style-type:none;
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover { 
-  position:relative; 
+  position: relative; 
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover > ul {
-left:0px;
-top:20px;
-padding:0px;
-font-size: 16px;
-text-decoration: none;
+  left:0px;
+  top:20px;
+  padding:0px;
+  font-size: 16px;
+  text-decoration: none;
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover > ul > li > a {
-padding:0px;
-display:block;
-width:85px;
-text-indent:15px;
-text-decoration: none;
+  padding:0px;
+  display:block;
+  width:85px;
+  text-indent:15px;
+  text-decoration: none;
 }
 header > div.header-container > nav.user-nav > div.container > div.panel-left > div.user-logo-state > div.loginAll > div.containe >  ul.drop_menu > li:hover > ul > li > a:hover { color: #478acb; text-decoration: underline;}
 
@@ -163,7 +163,126 @@ header > div.header-container > nav.user-nav > div.container > div.panel-right {
   padding: 0px;
   margin: 1px 0 0;
   float: right;
+  white-space: nowrap;
 }
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu {
+  padding:0px;
+  margin:0px;
+  margin-left: -2px;
+  list-style-type:none;
+  height:65px;
+  float: left;
+  word-spacing: normal;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li {float: left;}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li:hover {position: relative;}
+
+ header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li > a.account-settings {
+  -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+  -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+  background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color:#33bdef;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #057fd0;
+  display:inline-block;
+  cursor: pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:0px 24px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #5b6178;
+}
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li > a.account-settings:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+  background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color:#019ad2;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li > ul {
+  position:absolute;
+  left:-9999px;
+  top:-9999px;
+  list-style-type:none;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li:hover > ul {
+  width: 200px;
+  position: absolute;
+  left:-52px;
+  top:26px;
+  padding:0px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: middle;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px 0px #858585;
+    -moz-box-shadow: 0px 1px 5px 0px #858585;
+      box-shadow: 0px 1px 5px 0px #858585;
+  -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+      border-radius: 3px;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li:hover > ul > li > div {
+  font-weight: bold;
+  font-family: 'Bree Serif';
+  font-size: 18px;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 9px;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li:hover > ul > li > hr {
+  width: 100%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0px;
+  margin-bottom: 15px;
+  padding: 0;
+  box-shadow: 0px 0px 0px #888888;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li:hover > ul > li > a {
+  padding:0px;
+  display:block;
+  width:85px;
+  text-indent:15px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+header > div.header-container > nav.user-nav > div.container > div.panel-right > ul.drop_menu > li:hover > ul > li > a:hover {
+  color: #478acb; 
+  text-decoration: none;
+  font-weight: normal;
+}
+
+
+
+
+
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-left {
   height: 50px;
@@ -178,7 +297,7 @@ header > div.header-container > nav.menu-nav > div.container > div.panel-right {
   position: relative;
   float: right;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 header > div.header-container > nav.menu-nav > div.container > div.panel-right > ul.navigation-menu {
@@ -352,46 +471,6 @@ footer > div.footer-container > div.footer-right > div.footer-copywrite > h5 {
 
 
 
- header > div.header-container > nav.user-nav > div.container > div.panel-right > a.account-settings {
-  -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
-  -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
-  box-shadow: 0px 1px 0px 0px #f0f7fa;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
-  background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
-  background-color:#33bdef;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  border:1px solid #057fd0;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:arial;
-  font-size:15px;
-  font-weight:bold;
-  padding:0px 24px;
-  text-decoration:none;
-  text-shadow:0px -1px 0px #5b6178;
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-right > a.account-settings:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
-  background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
-  background-color:#019ad2;
-}
-header > div.header-container > nav.user-nav > div.container > div.panel-right > a.account-settings:active {
-  position:relative;
-  top:1px;
-}
 
 
 
