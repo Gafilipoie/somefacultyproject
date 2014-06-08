@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/modalDialog.css">
     <link rel="stylesheet" type="text/css" href="resources/css/mainbody.css">
     <link rel="stylesheet" type="text/css" href="resources/css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/gallery.css">
 </head>
 
  <body>
@@ -142,20 +143,60 @@
 <!-- cover image -->
 
     <div id='main'>
-        <article>
+        <article class="background">
             <div class="heading">
-                'Hotel Title Parameter'
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
-                <span class="blue"></span>
+                <div class="details-title">Hotel name parameter</div>
+                <hr>
             </div>
-            
+            <div class="container">
+                <div class="gallery">
+                    <div class="thumbnails">
+                        <img onmouseover="preview.src=img1.src" name="img1" src="resources/imagini/gallery/1.jpg" alt="" />
+                        <img onmouseover="preview.src=img2.src" name="img2" src="resources/imagini/gallery/2.jpg" alt="" />
+                        <img onmouseover="preview.src=img3.src" name="img3" src="resources/imagini/gallery/3.jpg" alt="" />
+                        <img onmouseover="preview.src=img4.src" name="img4" src="resources/imagini/gallery/4.jpg" alt="" />
+                        <img onmouseover="preview.src=img5.src" name="img5" src="resources/imagini/gallery/5.jpg" alt="" />
+                        <img onmouseover="preview.src=img6.src" name="img6" src="resources/imagini/gallery/6.jpg" alt="" />
+                    </div>
+                    <div class="preview" align="center">
+                        <img name="preview" src="resources/imagini/gallery/1.jpg" alt=""/>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <div class="description_h">
+                        <div class="d_title">Description</div>
+                        <div class="rezervation">
+                            <a href="#modalReservation">Book Now!</a>
+
+                            <div id="modalReservation" class="modalReservation">
+                                <div>
+                                    <a href="#closeReservation" title="Close" class="closeReservation">X</a>
+                                    Form Rezervation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d_type"><img src="resources/imagini/type-icon.png" style="width:15px; height: 15px; margin-top: 1px; margin-right: 3px">Hotel</div>
+                        <div class="d_loc"><img src="resources/imagini/location-icon.png" style="width:15px; height: 15px; margin-top: 1px; margin-right: 3px">Cluj</div>
+                        
+                    </div>
+                    <div class="description_t">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</div>
+                    <div class="description_f">
+                        <h3>Facilities</h3>
+                        <ul>
+                            <li>Ceva</li>
+                            <li>Ceva</li>
+                            <li>Ceva</li>
+                            <li>Ceva</li>
+                            <li>Ceva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </article>
     <!--<aside>aside</aside>-->
     </div>
 <!-- main body -->
-
     <footer class="footer">
         <div class="footer-container">
             <ul class="footer-left">
