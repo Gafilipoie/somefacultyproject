@@ -158,39 +158,26 @@
             <div class="container">
                 <div class="search-box">
                     <form name="search-box" action="" method="">
-                        <div class="search">
+                        
                             Destination/Hotel Name:<br> 
-                            <input type="search" name="search" size="68" autocomplete="off" placeholder="e.g. City, Country or Specific Hotel">
-                        </div>
+                            <input type="search" name="search" size="25" autocomplete="off" placeholder="e.g. City or Specific Hotel">
                         <br>
-                        <div class="search">
                             Buget between:<br> 
                             <input type="range" name="amountRange" min="0" max="500" value="0" step="10" oninput="this.form.amountInput.value=this.value" />
-                            <input type="number" name="amountInput" min="0" max="500" value="0" step="10" oninput="this.form.amountRange.value=this.value" />
-                            And
+                            <input type="number" name="amountInput" min="0" max="500" value="0" step="10" oninput="this.form.amountRange.value=this.value" /><br>
+                            And<br>
                             <input type="range" name="amountRange2" min="0" max="500" value="0" step="10" oninput="this.form.amountInput2.value=this.value" />
                             <input type="number" name="amountInput2" min="0" max="500" value="0" step="10" oninput="this.form.amountRange2.value=this.value" />
-                        </div>
                         <br>
-                        <div class="search">
                             Check-in Date:<br>
-                            <input type="date" name="date">
-                        </div>
-                        <div class="search">
+                            <input type="date" name="date"><br>
                             Check-out Date:<br>
                             <input type="date" name="date">
-                        </div>
                         <br>
-                        <div class="search">
                             Rooms: <input type="number" name="number" min="0" max="30" value="0" step="1">
-                        </div>
-                        <div class="search" style="margin-left: 43px;">
                             Beds: <input type="number" name="number" min="0" max="30" value="0" step="1">
-                        </div>
                         <br>
-                        <div class="search" style="float: right;">
                             <input type="submit" value="Search" name="search">
-                        </div>
                     </form>
                 </div>
                 <br>
