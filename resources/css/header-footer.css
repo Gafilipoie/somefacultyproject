@@ -1,6 +1,6 @@
 body {
    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-   font-size: 22px;
+   font-size: 14px;
    line-height: 1.5;
    background: #f9f8f4;
    margin: 0px;
@@ -75,6 +75,7 @@ header > div.header-container > div.container {
 header > div.header-container > nav.user-nav > div.container > div.panel-left {
   padding: 2px 4px;
   float: left;
+  visibility: visible;
   display: inline-block;
   width: 300px;
 }
@@ -162,6 +163,7 @@ header > div.header-container > nav.user-nav > div.container > div.panel-left > 
 header > div.header-container > nav.user-nav > div.container > div.panel-right {
   padding: 0px;
   margin: 1px 0 0;
+  visibility: hidden;
   float: right;
   white-space: nowrap;
 }
@@ -469,8 +471,13 @@ footer > div.footer-container > div.footer-right > div.footer-copywrite > h5 {
 }
 
 
+#leftPanel{
+  visibility: visible;
+}
 
-
+#rightPanel{
+  visibility: hidden;
+}
 
 
 

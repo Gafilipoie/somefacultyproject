@@ -1,4 +1,5 @@
 <?php 
+
 $host="fenrir.info.uaic.ro"; // Host name 
 $db_username="NELO"; // Mysql username 
 $db_password="sjOqapXt5L"; // Mysql password 
@@ -38,12 +39,17 @@ while($ok==0){
 	
 	$randomNum=rand(1000,9999);
 	$query="SELECT ID_User FROM $tbl_name WHERE ID_User=$randomNum;";
+	if(mysql_query($query)==true || mysql_query($query) == false){
+		return $randomNum;
+	}
+    else{
 	$result = mysql_query($query);
-	
-		if(mysql_fetch_array( $result)==NULL)
+		$result = mysql_fetch_array( $result);
+		if( $result['ID_User']==NULL)
 			{
 			$ok=1;
 			}
+		}
 }
     return $randomNum;
 }
@@ -84,7 +90,10 @@ $u_confirmPassword_id = stripslashes($u_confirmPassword_id);
 function doInsert(){
 $rn = getRandomID();
 $insstm="INSERT INTO $tbl_name VALUES ('$rn','$u_username_id', '$u_password_id',2,1,'$u_firstName_id','$u_lastname_id','$u_mobile_id','$u_phone_id','$u_email_id','$u_cnp_id','$u_birthDate_id','romanie','$u_city_id','$u_address_id','$u_postalCode_id',0);";
+ob_end_clean();
 $resu=mysql_query($insstm);
+ob_end_clean();
+
 }
 
 //pana aici
@@ -225,9 +234,10 @@ $export=verifyUser($u_username_id,1);
 }
 echo ($export);
  if($okAll==1)
- {
- 	$doInsert();
- 	header("location:home.php");
+ {  ob_end_clean();
+ 	
+ 	doInsert();
+ 	
  }
 
 ?>

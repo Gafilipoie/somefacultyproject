@@ -33,8 +33,8 @@ try{
 			if(ajaxRequest.responseText=='Wrong Username or Password'){
 			document.getElementById('login_error').innerHTML = ajaxRequest.responseText;
 		     }else{
-		     	setCookie('nelo',1,10);
-				hidestuff('leftPanel');
+		     	window.location.replace("contacts.php");
+		     	hidestuff('leftPanel');
 		     	showstuff('rightPanel');
 		     }
 		}
@@ -47,50 +47,11 @@ try{
 
 
 function showstuff(boxid){
-   document.getElementById(boxid).style.visibility="visible !important";
+   document.getElementById(boxid).style.display="inline-block";
+   document.getElementById(boxid).style.visibility="visible";
 }
  
 function hidestuff(boxid){
+   document.getElementById(boxid).style.display="none";
     document.getElementById(boxid).style.visibility="hidden";
-}
-
-function setCookie(cname, cvalue, exhours) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exhours*60*60*1000));
-    var expires = "expires="+d.toGMTString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i].trim();
-        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-    }
-    return "";
-}
-
-function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-        user = prompt("Please enter your name:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
-        }
-    }
-}
-
-function remodel(){
-
-if(getCookie('nelo')==1)
- 	{
-	hidestuff('leftPanel');
- 	showstuff('rightPanel');
- 	}else{
- 	alert('te omor');
- 	}
-
 }
