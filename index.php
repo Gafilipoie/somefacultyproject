@@ -131,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-right">
+ 				<div class="panel-right">
                     <ul class="drop_menu">
                         <li><a href="#" class="account-settings">Marius</a>
                             <ul>
