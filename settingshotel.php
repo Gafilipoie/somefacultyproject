@@ -26,37 +26,37 @@
                 <div class="edit"><a href="#" class="edit">Edit</a></div>
                 <hr>
                 <div class="info">Hotel Name</div>
-                <input type="text" id="sh_hotelName" name="username" style="float: right;">
+                <input type="text" id="sh_hotelName" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Username</div>
-                <input type="text" id="sh_username" name="username" style="float: right;">
+                <input type="text" id="sh_username" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Adress</div>
-                <input type="text" id="sh_address" name="username" style="float: right;">
+                <input type="text" id="sh_address" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">City</div>
-                <input type="text"  id="sh_city"name="username" style="float: right;">
+                <input type="text"  id="sh_city"name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Country</div>
-                <input type="text" id="sh_contry" name="username" style="float: right;">
+                <input type="text" id="sh_contry" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Postal Code</div>
-                <input type="text"  id="sh_postalCode" name="username" style="float: right;">
+                <input type="text"  id="sh_postalCode" name="username" style="float: right;" value="predifinedValue" >
                 <hr>
                 <div class="info">Mobile</div>
-                <input type="text" id="sh_mobile" name="username" style="float: right;">
+                <input type="text" id="sh_mobile" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Phone</div>
-                <input type="text" id="sh_phone" name="username" style="float: right;">
+                <input type="text" id="sh_phone" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Fax</div>
-                <input type="text" id="sh_fax" name="username" style="float: right;">
+                <input type="text" id="sh_fax" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Email Adress</div>
-                <input type="text"  id="sh_email" name="username" style="float: right;">
+                <input type="text"  id="sh_email" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Password</div>
-                <input type="text"  id="sh_password" name="username" style="float: right;">
+                <input type="text"  id="sh_password" name="username" style="float: right;" value="predifinedValue">
                 <hr>
                 <div class="info">Facilities</div>
                 <form name="facilities"  action="" method="" class="form">
@@ -78,7 +78,15 @@
                             <input type="checkbox" name="terasa"> Terasa
                             <input type="checkbox" name="gratar" style="margin-left: 37px;"> Gratar
                         </div>
+                </form>
+                <hr>
+                
+                <form action="" method="post" enctype="multipart/form-data">
+                <label for="file">Filename:</label>
+                <input type="file" name="file" id="file"><br>
+                <input type="submit" name="submit" value="Add more images" style="float: right;">
                 </form>    
+                
                 <hr>
                 <div class="edit"><a href="#" class="edit">Save</a></div>
             </div>

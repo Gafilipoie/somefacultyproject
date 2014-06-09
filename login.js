@@ -89,8 +89,9 @@ if(getCookie('nelo')==1)
  	{
 	hidestuff('leftPanel');
  	showstuff('rightPanel');
+ 	alert('cokie nesetat');
  	}else{
- 	alert('te omor');
+ 	alert('cokie nesetat');
  	}
 
 }
