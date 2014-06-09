@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="panel-right">
-                    <a id="home" href="index.php" onclick="remodel()"  title="Home" class="Button">Home</a>
+                    <a id="home" href="index.php"   title="Home" class="Button">Home</a>
                     <a id="search" href="search.php"   title="Home" class="Button">Search</a>
                     <a id="contact" href="contact.php"  title="Home" class="Button">Contact Us</a>
                 </div>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/header-footer.css">
 </head>
 
- <body>
+ <body onload="remodel()">
     <header class="nav-down">
         <div class="header-container">
         <nav class="user-nav">
@@ -204,5 +204,10 @@
         </div>
     </footer>
 <!-- footer -->
+<script> 
+  $("#header").load("header.php"); 
+  $("#footer").load("footer.php"); 
+  $(document).ready("remodel()");
+</script> 
  </body>
 </html>
