@@ -45,8 +45,9 @@ function ajaxFunction(){
 	 'u_username_id='+u_username_id+'&'+
 	 'u_email_id='+u_email_id+'&'+
 	 'u_password_id='+u_password_id+'&'+
-	 'u_confirmPassword_id='+u_confirmPassword_id;
-      	 	 
+	 'u_confirmPassword_id='+u_confirmPassword_id
+	 ;
+	 
 		try{
 		// Opera 8.0+, Firefox, Safari
 		ajaxRequest = new XMLHttpRequest();
@@ -64,26 +65,10 @@ function ajaxFunction(){
 			}
 		}
 	}
-
 	// Create a function that will receive data sent from the server
 	ajaxRequest.onreadystatechange = function(){
-
 		if(ajaxRequest.readyState == 4){
-			
-			if(ajaxRequest.status == 200){
-               document.getElementById('u_error').innerHTML  = ajaxRequest.responseText;
-               
-               if(ajaxRequest.responseText=='')
-               	{window.location.replace("settingsuser.php");
-           			}
-           }
-           else if(ajaxRequest.status == 400) {
-              alert(ajaxRequest.responseText)
-           }
-           else {
-               alert(ajaxRequest.status+ajaxRequest.responseText);
-               window.location.replace("http://stackoverflow.com");
-           }
+			document.getElementById('u_error').innerHTML = ajaxRequest.responseText;
 		}
 	}
 	

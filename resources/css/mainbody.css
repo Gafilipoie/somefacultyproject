@@ -505,16 +505,6 @@ box-shadow: 0px 1px 5px 0px #858585;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 #main > article.background > div.container > div.search-result > div.hotel-block {
   float: left;
   margin-top: 20px;
@@ -627,3 +617,87 @@ text-align:left;
 font-family:lucida sans unicode, lucida grande, sans-serif;
 line-height:1;
 }
+
+
+
+
+
+.container > div.description {
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  float: left;
+  margin-left: 7%;
+  margin-right: 8%;
+}
+
+#main > article.background > div.container > div.description > div.description_h {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #616666;
+  margin: 15px;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  line-height: 20px;
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.67);
+}
+
+#main > article.background > div.container > div.description > div.description_h > div.rezervation {
+  float: right;
+}
+
+#main > article.background > div.container > div.description > div.description_h > div.d_title {
+  float: left;
+}
+
+#main > article.background > div.container > div.description > div.description_h > div.d_loc {
+  float: right;
+  font-weight: normal;
+  font-size: 15px;
+}
+#main > article.background > div.container > div.description > div.description_h > div.d_type {
+  float: right;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+
+
+#main > article.background > div.container > div.description > div.description_t {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  color: #3D4040;
+  margin: 15px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.67);
+  float: left;
+  white-space: normal;
+  width: 65%;
+}
+
+#main > article.background > div.container > div.description > div.description_f {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  color: #3D4040;
+  padding: 5px;
+  margin: 15px;
+  margin-left: 30px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.67);
+  float: left;
+  white-space: normal;
+}
+
+#main > article.background > div.container > div.description > div.description_f > h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #616666;
+  font-weight: normal;
+  letter-spacing: 1.7px;
+  line-height: 20px;
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.67);
+}
+

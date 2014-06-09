@@ -204,10 +204,5 @@
         </div>
     </footer>
 <!-- footer -->
-<script> 
-  $("#header").load("header.php"); 
-  $("#footer").load("footer.php"); 
-  $(document).ready("remodel()");
-</script> 
  </body>
 </html>
