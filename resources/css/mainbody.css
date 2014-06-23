@@ -1,24 +1,43 @@
+body {
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 14px;
+   line-height: 1.5;
+   background: #f9f8f4;
+   margin: 0px;
+   padding-top: 54px;
+  }
+
+body > div.cover {
+  min-width: 1170px;
+  height: 366px;
+  background: url(images/cover.png) no-repeat center;
+  background-size: cover;
+}
+
+
+
+
 @media all and (max-width: 640px) {
   
-   #main, #page {
+   #main_article, #page {
     -webkit-flex-flow: column;
             flex-flow: column;
             flex-direction: column;
    }
 
-   #main > article, #main > aside {
+   #main_article > article, #main_article > aside {
     
     -webkit-order: 0;
             order: 0;
    }
   
-   #main > aside, header, footer {
+   #main_article > aside, header, footer {
     min-height: 50px;
     max-height: 50px;
    }
 }
 
-#main {
+#main_article {
   width: 76%;
   min-height: 1000px;
   margin-left: 11.7%;
@@ -27,60 +46,25 @@
   -webkit-flex-flow: row;
 }
 
-#main > article {
-  width: 76%;
-  padding: 5px;
+#main_article > article {
+  background-color: #fff;
+  padding: 10px;
   margin: 4px;
-  margin-top: -30px;
+  margin-top: 20px;
     -webkit-flex: 3 1 60%;
           flex: 3 1 60%;
   -webkit-order: 2;
           order: 2;
+  -moz-box-shadow: 0px 1px 5px 0px #858585;
+-webkit-box-shadow: 0px 1px 5px 0px #858585;
+box-shadow: 0px 1px 5px 0px #858585;
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+      border-radius: 5px;
 }
 
 
-
-#main > article > div.heading {
-
-  position: relative;
-  margin: 0 auto 38px;
-  padding: 38px 0 20px;
-  font-family: Muli;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#main > article > div.heading > span.red {
-  left: 0;
-  background: #df6c4f;
-}
-
-#main > article > div.heading > span.yellow {
-  left: 25%;
-  background: #e6be34;
-}
-
-#main > article > div.heading > span.green {
-  left: 50%;
-  background: #409f89;
-}
-
-
-#main > article > div.heading > span.blue {
-  left: 75%;
-  background: #1a99aa;
-}
-
-.heading .red, .heading .yellow, .heading .green, .heading .blue{
-  width: 25%;
-  height: 3px;
-  display: block;
-  bottom: 0;
-  position: absolute;
-}
-
-#main > article > div.hotel-block {
+#main_article > article > div.hotel-block {
   float: left;
   margin: 5px;
   margin-right: 10px;
@@ -95,7 +79,7 @@
   box-shadow: inset 0px 0px 9px 0px #ead1d1;
 }
 
-#main > article > div.hotel-block > div.block-body {
+#main_article > article > div.hotel-block > div.block-body {
   display: block;
   overflow: hidden;
   position: relative;
@@ -148,7 +132,7 @@
   opacity: 1;
 }
 
-#main > article > div.hotel-block > div.block-footer {
+#main_article > article > div.hotel-block > div.block-footer {
   display: inherit;
   overflow: auto;
   position: relative;
@@ -156,15 +140,15 @@
   background: #f9f8f4;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-detail {
+#main_article > article > div.hotel-block > div.block-footer > div.hotel-detail {
   float: left;
   display: block;
   margin-left: 10px;
    position: relative;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-type {
-  margin-left: 25px;
+#main_article > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-type {
+  margin-left: 5px;
   float: left;
   display: block;
   color: #373737;
@@ -172,24 +156,24 @@
   font-weight:bold;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 15px;
+  
+  font-size: 12px;
   line-height: 12px;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-name {
+#main_article > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-name {
   display: block;
   color: #373737;
   font-family: 'Bree Serif';
   font-weight:bold;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 21px;
+ 
+  font-size: 17px;
   line-height: 32px;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-location {
+#main_article > article > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-location {
   float: left;
   display: block;
   color: #373737;
@@ -197,12 +181,12 @@
   font-weight:bold;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 15px;
+ 
+  font-size: 12px;
   line-height: 12px;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.rezervation {
+#main_article > article > div.hotel-block > div.block-footer > div.rezervation {
   float: right;
   width: 104px;
   margin-top: 13px;
@@ -211,7 +195,7 @@
   padding-left: 5px;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-description {
+#main_article > article > div.hotel-block > div.block-footer > div.hotel-description {
   float: left;
 
   margin-top: 5px;
@@ -226,7 +210,7 @@
   box-shadow: inset 0px 0px 9px 0px #ead1d1;
 }
 
-#main > article > div.hotel-block > div.block-footer > div.hotel-description > p {
+#main_article > article > div.hotel-block > div.block-footer > div.hotel-description > p {
 font-weight:normal;
 color:#827678;
 letter-spacing:0pt;
@@ -237,7 +221,7 @@ font-family:lucida sans unicode, lucida grande, sans-serif;
 line-height:1;
 }
   
-#main > article > .hotelContent {
+#main_article > article > .hotelContent {
   float: left;
   width: 74.5%;
   min-height: 157px;
@@ -252,257 +236,6 @@ line-height:1;
 
 
 
-#main > article > aside {
-   width: 22%;
-   padding-right: 10px;
-   float: left;
-   -webkit-flex: 1 6 20%;
-           flex: 1 6 20%;
-   -webkit-order: 3;
-           order: 3;
-   }
- 
-#main > article > aside > div.categories-box {
-  min-height: 157px;
-  margin: 1px;
-  background: #fff;
-  border: 1px solid #e7e4da;
-  border-radius: 3px;
-  border-color: #DADADA;
-  box-shadow: 2px 2px 5px #888888; 
-  font-family: 'Muli';
-}  
-
-#main > article > aside > div.categories-box > div.box-header {
-  text-align: center;
-}
-
-#main > article > aside > div.categories-box > div.box-header > h3 {
-  display: block;
-  margin: 0;
-  padding: 15px 2px;
-  font-size: 17px;
-  line-height: 1.1;
-  color: #373737;
-}
-
-#main > article > aside > div.categories-box > div.box-body {
-  display: -webkit-flex;
-  display: flex;
-  padding-top: 8px;
-}
-
-#main > article > aside > div.categories-box > div.box-body > ul {
-  position: relative;
-  width: 215px;
-  height: 280px;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  list-style: none;
-}
-
-#main > article > aside > div.categories-box > div.box-body > ul > li {
-  padding: 1px;
-  background: #eee;
-  color: #252525;
-  font-size: 18px;
-}
-
-#main > article > aside > div.categories-box > div.box-body > ul > li:nth-child(odd) {
-  background: #fff;
-}
-
-#main > article > aside > div.categories-box > div.box-body > ul > li > a {
-  color: #373737;
-  text-decoration: none;
-  font-weight:normal;
-}
-
-#main > article > aside > div.categories-box > div.box-body > ul > li > a > h5 {
-  padding: 0px;
-  margin: 0px;
-  font-weight: normal;
-}
-
-
-
-
-#main > article.background {
-  background-color: #fff;
-  padding: 10px;
-  margin: 4px;
-  margin-top: 20px;
-    -webkit-flex: 3 1 60%;
-          flex: 3 1 60%;
-  -webkit-order: 2;
-          order: 2;
-  -moz-box-shadow: 0px 1px 5px 0px #858585;
--webkit-box-shadow: 0px 1px 5px 0px #858585;
-box-shadow: 0px 1px 5px 0px #858585;
-  -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-      border-radius: 5px;
-}
-
-#main > article.background > div.heading {
-  font-weight: bold;
-  font-size: 35px;
-  margin: 0px;
-}
-
-#main > article.background > div.heading > p {
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
-  margin-left: 40px;
-}
-
-#main > article.background > div.heading > hr {
-  width: 92.5%;
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin-left: 34px;
-  margin-right: 1px;
-  padding: 0;
-  box-shadow: 0px 0px 0px #888888;
-}
-
-#main > article.background > div.container {
-  float: left;
-  margin: 2%;
-  padding: 2px;
-}
-
-#main > article.background > div.container > div.contact-info {
-  float: left;
-  margin-left: 150px;
-}
-
-#main > article.background > div.container > div.contact-info > h4 {
-  margin: 15px 0 5px;
-  padding: 0px;
-  font-size: 22px;
-  color: #727272;
-  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-#main > article.background > div.container > div.contact-info > p {
-  margin: 0 0 10px;
-  padding: 0px;
-  text-align: left;
-  font-size: 16px;
-  color: #5a5a5a;
-  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-#main > article.background > div.container > div.contact-info > p > a {
-  text-decoration: none;
-  color: #008CD2;
-  cursor: auto;
-  font-weight: normal;
-}
-
-#main > article.background > div.container > div.map {
-  float: right;
-  margin-left: 100px;
-  margin-right: 50px;
-}
-
-#main > article.background > div.container > div.partners-logo {
-  float: left;
-  margin-left: 100px;
-  vertical-align: middle;
-}
-
-#main > article.background > div.container > div.partners-logo > img {
-  margin: 5px;
-}
-
-#main > article.background > div.container > div.about-info {
-  float: left;
-  margin-left: 30px;
-  vertical-align: middle;
-}
-
-
-#main > article.background > div.container > div.about-info > p {
-  margin: 0 0 10px;
-  padding: 0px;
-  text-align: left;
-  font-size: 18px;
-  color: #5a5a5a;
-  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-#main > article.background > div.container > div.about-picture {
-  float: right;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.form {
-  float: left;
-}
-
-.edit_checkbox {
-  float:right;
-  margin-left: 40px;
-}
-
-#main > article.background > div.container > div.search-box {
-  float: left;
-  margin-left: 3%;
-  margin-right: 65%;
-  vertical-align: middle;
-  position: relative;
-  padding: 2px;
-  font-weight: bold;
-  border: 1px #d5ddc0 solid;
-  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  display: block;
-  background-color: #eee;
-}
-
-#main > article.background > div.container > div.search-box > form {
-  float: left;
-  margin: 5px;
-  padding: 5px;
-  color: #373737;
-  font-family: 'Bree Serif';
-    font-weight: bold;
-    text-overflow: ellipsis;
-    font-size: 15px;
-    line-height: 32px;
-  text-align: left;
-}
-
-
-#main > article.background > div.container > div.search-result {
-  float: left;
-  margin-top: 20px;
-  margin-left: 0px;
-  padding: 2px;
-  padding-left: 25px;
-  position: relative;
-  border: 1px #d5ddc0 solid;
-  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  display: block;
-  background-color: #eee;
-}
 
 
 
@@ -515,115 +248,3 @@ box-shadow: 0px 1px 5px 0px #858585;
 
 
 
-#main > article.background > div.container > div.search-result > div.hotel-block {
-  float: left;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 0px;
-  margin-bottom: 40px;
-  width: 30%;
-  padding-right: 4px;
-  padding-left: 4px;
-  border: 1px #d5ddc0 solid;
-  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  box-shadow: inset 0px 0px 9px 0px #ead1d1;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-body {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  background: #f9f8f4;
-  cursor: pointer;
-  margin-top: 3px;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer {
-  display: inherit;
-  overflow: auto;
-  position: relative;
-  padding-top: 3px;
-  background: #f9f8f4;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail {
-  float: left;
-  display: block;
-  margin-left: 10px;
-   position: relative;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-type {
-  margin-left: 25px;
-  float: left;
-  display: block;
-  color: #373737;
-  font-family: 'Bree Serif';
-  font-weight:bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 15px;
-  line-height: 12px;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-name {
-  display: block;
-  color: #373737;
-  font-family: 'Bree Serif';
-  font-weight:bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 21px;
-  line-height: 32px;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-location {
-  float: left;
-  display: block;
-  color: #373737;
-  font-family: 'Bree Serif';
-  font-weight:bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 15px;
-  line-height: 12px;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.rezervation {
-  float: right;
-  width: 104px;
-  margin-top: 13px;
-  
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-description {
-  float: left;
-
-  margin-top: 5px;
-  margin-bottom: 3px;
-  width: 96%;
-  min-height: 150px;
-  padding-right: 5px;
-  padding-left: 5px;
-  border: 1px #d5ddc0 solid;
-  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
-  box-shadow: inset 0px 0px 9px 0px #ead1d1;
-}
-
-#main > article.background > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-description > p {
-font-weight:normal;
-color:#827678;
-letter-spacing:0pt;
-word-spacing:0pt;
-font-size:12px;
-text-align:left;
-font-family:lucida sans unicode, lucida grande, sans-serif;
-line-height:1;
-}

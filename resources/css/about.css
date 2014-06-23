@@ -1,0 +1,23 @@
+#main_article > article > div.container > div.about-info {
+  float: left;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+
+#main_article > article > div.container > div.about-info > p {
+  margin: 0 0 10px;
+  padding: 0px;
+  text-align: left;
+  font-size: 18px;
+  color: #5a5a5a;
+  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#main_article > article > div.container > div.about-picture {
+  float: right;
+  margin-left: 50px;
+  margin-right: 50px;
+}

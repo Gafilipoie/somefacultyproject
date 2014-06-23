@@ -1,0 +1,9 @@
+#main_article > article > div.container > div.partners-logo {
+  float: left;
+  margin-left: 100px;
+  vertical-align: middle;
+}
+
+#main_article > article. > div.container > div.partners-logo > img {
+  margin: 5px;
+}

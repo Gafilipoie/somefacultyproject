@@ -45,7 +45,10 @@ function ajaxFunction(){
 	 'u_username_id='+u_username_id+'&'+
 	 'u_email_id='+u_email_id+'&'+
 	 'u_password_id='+u_password_id+'&'+
-	 'u_confirmPassword_id='+u_confirmPassword_id;
+	 'u_confirmPassword_id='+u_confirmPassword_id+'&'+
+	 'button='+'1';
+
+	 
       	 	 
 		try{
 		// Opera 8.0+, Firefox, Safari
@@ -71,10 +74,14 @@ function ajaxFunction(){
 		if(ajaxRequest.readyState == 4){
 			
 			if(ajaxRequest.status == 200){
-               document.getElementById('u_error').innerHTML  = ajaxRequest.responseText;
-               
+               //document.getElementById('u_error').innerHTML  = ajaxRequest.responseText;
+              
                if(ajaxRequest.responseText=='')
-               	{window.location.replace("settingsuser.php");
+               	{
+               		document.getElementById('left').style.visibility="hidden";
+                    document.getElementById('right').style.visibility="show";
+                     window.location.href="";
+                     $("#main_article").load('settingsuser.php');
            			}
            }
            else if(ajaxRequest.status == 400) {

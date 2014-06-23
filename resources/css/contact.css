@@ -1,0 +1,38 @@
+#main_article > article > div.container > div.contact-info {
+  float: left;
+  margin-left: 150px;
+}
+
+#main_article > article > div.container > div.contact-info > h4 {
+  margin: 15px 0 5px;
+  padding: 0px;
+  font-size: 22px;
+  color: #727272;
+  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#main_article > article > div.container > div.contact-info > p {
+  margin: 0 0 10px;
+  padding: 0px;
+  text-align: left;
+  font-size: 16px;
+  color: #5a5a5a;
+  font-family: 'segoe_uiregular', "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#main_article > article > div.container > div.contact-info > p > a {
+  text-decoration: none;
+  color: #008CD2;
+  cursor: auto;
+  font-weight: normal;
+}
+
+#main_article > article > div.container > div.contact-map {
+  float: right;
+  margin-left: 100px;
+  margin-right: 50px;
+}

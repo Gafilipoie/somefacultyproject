@@ -89,21 +89,16 @@
 .modalReservation > div {
 	width: 800px;
 	min-height: 400px;
-	position: relative;
-	margin: 6% auto;
-	padding: 5px 20px 13px 20px;
+	position: absolute;
+	margin: 6%;
+	margin-left:19%;
+	margin-right: 35%;
+	vertical-align: middle;
+	padding: 0px 12px 5px 0px;
 	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #ccc);
-	background: -webkit-linear-gradient(#fff, #ccc);
-	background: -o-linear-gradient(#fff, #ccc);
-	font-family: 'Bree Serif';
-    font-weight: bold;
-    white-space: normal;
-    text-overflow: ellipsis;
-    text-align: center;
-    font-size: 17px;
-    line-height: 32px;
+	background: -moz-linear-gradient(#fff, #fff);
+	background: -webkit-linear-gradient(#fff, #fff);
+	background: -o-linear-gradient(#fff, #fff);
     -webkit-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
        -moz-box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
             box-shadow:0px 0px 2px 10px rgba(0, 0, 0, 0.3);
@@ -248,6 +243,35 @@
        -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
             box-shadow: 0px 1px 0px 0px #f0f7fa;
 }
+.modalReservation > div > .loginTitle {
+width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 5px;
+	color: #ffffff;
+	font-family: 'Bree Serif';
+    font-weight: bold;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 25px;
+    line-height: 32px;
+	text-align: center;
+  	text-shadow:0px -1px 0px #5b6178;
+  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+  	background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  	background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  	background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  	background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
+  	border:1px solid #057fd0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px; 
+	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+       -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+}
 .modalSignupUser > div > .loginForm {
 
 	float: left;
@@ -278,19 +302,41 @@
 }
 div.form1 {
 	margin: 1px;
-	margin-left: 60px;
+	margin-left: 86px;
 	float: left;
 	position: relative;
 	word-spacing: normal;
 }
 
 div.form1 > hr{
-	float: left;
-	width: 98.5%;
-	border: 1px dotted #ccc;
-	margin: 0;
-	margin-bottom: 5px;
+	width: 100%;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 1px;
+	margin-bottom: 9px;
 	padding: 0;
+	box-shadow: 0px 0px 0px #ccc;
+}
+h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.modalReservation > div > .loginForm {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	color: #373737;
+	font-family: 'Bree Serif';
+    font-weight: bold;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 32px;
 }
 
 .modalLogin > div > .loginForm {

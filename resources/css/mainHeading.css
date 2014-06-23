@@ -1,0 +1,63 @@
+#main_article > article > div.heading {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0px;
+  font-family: Muli;
+  text-align: center;
+}
+
+#main_article > article > div.heading > p {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+#main_article > article > div.heading > hr {
+  width: 92.5%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-left: 34px;
+  margin-right: 1px;
+  padding: 0;
+  box-shadow: 0px 0px 0px #888888;
+}
+
+#main_article > article > div.heading > span.red {
+  left: 0;
+  background: #df6c4f;
+}
+
+#main_article > article > div.heading > span.yellow {
+  left: 25%;
+  background: #e6be34;
+}
+
+#main_article > article > div.heading > span.green {
+  left: 50%;
+  background: #409f89;
+}
+
+
+#main_article > article > div.heading > span.blue {
+  left: 75%;
+  background: #1a99aa;
+}
+
+.heading .red, .heading .yellow, .heading .green, .heading .blue{
+  width: 25%;
+  height: 3px;
+  display: block;
+  bottom: 0;
+  position: absolute;
+}
+
+
+
+#main_article > article > div.container {
+  float: left;
+  margin: 2%;
+  padding: 2px;
+}

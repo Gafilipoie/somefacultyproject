@@ -1,0 +1,168 @@
+#main_article > article > div.container > div.search-box {
+  float: left;
+  margin-left: 3%;
+  margin-right: 65%;
+  vertical-align: middle;
+  position: relative;
+  padding: 2px;
+  font-weight: bold;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  display: block;
+  background-color: #eee;
+}
+
+#main_article > article > div.container > div.search-box > form {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  color: #373737;
+  font-family: 'Bree Serif';
+    font-weight: bold;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 32px;
+  text-align: left;
+}
+
+
+#main_article > article > div.container > div.search-result {
+  float: left;
+  margin-top: 20px;
+  margin-left: 0px;
+  padding: 2px;
+  padding-left: 25px;
+  position: relative;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  display: block;
+  background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#main_article > article > div.container > div.search-result > div.hotel-block {
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  width: 30%;
+  padding-right: 4px;
+  padding-left: 4px;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-body {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: #f9f8f4;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer {
+  display: inherit;
+  overflow: auto;
+  position: relative;
+  padding-top: 3px;
+  background: #f9f8f4;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail {
+  float: left;
+  display: block;
+  margin-left: 10px;
+   position: relative;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-type {
+  margin-left: 5px;
+  float: left;
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+  font-size: 12px;
+  line-height: 12px;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-name {
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+  font-size: 17px;
+  line-height: 32px;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-detail > div.hotel-location {
+  float: left;
+  display: block;
+  color: #373737;
+  font-family: 'Bree Serif';
+  font-weight:bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+  font-size: 12px;
+  line-height: 12px;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.rezervation {
+  float: right;
+  width: 104px;
+  margin-top: 13px;
+  
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-description {
+  float: left;
+
+  margin-top: 5px;
+  margin-bottom: 3px;
+  width: 96%;
+  min-height: 150px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px #d5ddc0 solid;
+  -moz-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  -webkit-box-shadow: inset 0px 0px 9px 0px #ead1d1;
+  box-shadow: inset 0px 0px 9px 0px #ead1d1;
+}
+
+#main_article > article > div.container > div.search-result > div.hotel-block > div.block-footer > div.hotel-description > p {
+font-weight:normal;
+color:#827678;
+letter-spacing:0pt;
+word-spacing:0pt;
+font-size:12px;
+text-align:left;
+font-family:lucida sans unicode, lucida grande, sans-serif;
+line-height:1;
+}
